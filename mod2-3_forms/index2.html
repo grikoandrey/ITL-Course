@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mod2-3</title>
+</head>
+<body>
+<!--<form action="https://webhook.site/8b56a395-dbcc-4dd8-b972-d1b94d0913a7" method="post">-->
+<!--    <label>-->
+<!--    Введите для поиска:-->
+<!--    <input type="text" name="q">-->
+<!--&lt;!&ndash;    <input type="text" name="gender" value="male">&ndash;&gt;-->
+<!--    <button type="submit">Найти</button>-->
+<!--    </label>-->
+<!--</form>-->
+
+<form action="https://webhook.site/8b56a395-dbcc-4dd8-b972-d1b94d0913a7" method="post">
+    <div>
+        <label>
+            Name:
+            <input type="text" name="name" placeholder="John" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Surname:
+            <input type="text" name="surname" placeholder="Wik" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Gender:
+            <select name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </label>
+    </div>
+    <br>
+    <div>
+        Your directions:
+        <label>
+            <input type="checkbox" name="directions[]" value="full"> Fullstack
+        </label>
+        <label>
+            <input type="checkbox" name="directions[]" value="design"> Design
+        </label>
+        <label>
+            <input type="checkbox" name="directions[]" value="testing"> Testing
+        </label>
+    </div>
+    <br>
+    <div>
+        Your experience:
+        <label>
+            <input type="radio" name="experience" value="1" required> less 2 years
+        </label>
+        <label>
+            <input type="radio" name="experience" value="2" required> 2 -5 years
+        </label>
+        <label>
+            <input type="radio" name="experience" value="3" required> above 5 years
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Your info:
+            <textarea name="info" cols="30" rows="10" required></textarea>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            <input type="checkbox" name="agreed" value="1" required> I agree
+        </label>
+    </div>
+    <button type="submit">Confirm</button>
+    <button type="reset">Clear form</button>
+</form>
+
+</body>
+</html>
