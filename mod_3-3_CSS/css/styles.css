@@ -1,0 +1,41 @@
+/*.red-text {*/
+/*    color: red;*/
+/*}*/
+
+/*.big-text {*/
+/*    font-size: 50px;*/
+/*}*/
+
+/*#my-div {*/
+/*    font-style: italic;*/
+/*}*/
+
+/*p.red-text {*/
+/*    color: #981515;*/
+/*}*/
+
+/*.big-text p > span {*/
+/*    border: 1px solid greenyellow;*/
+/*}*/
+
+/*div * {*/
+/*    background: yellow;*/
+/*}*/
+
+div {
+    font-size: 50px;
+    border: 1px solid black;
+}
+
+span.my-text {
+    border: 1px solid red;
+}
+
+.my-text {
+    border: 5px solid yellowgreen;
+}
+
+span {
+    border: inherit !important;
+}
+
