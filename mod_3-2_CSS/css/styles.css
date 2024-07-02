@@ -16,20 +16,20 @@
 /*    background: linear-gradient(90deg, #000000, #d24b16);*/
 /*}*/
 
-h3 {
-    background: yellow;
-    padding-top: 10%;
-    border: 2px solid black;
-    border-right: 10px dashed black;
-    border-bottom-color: red;
-    /*border-radius: 10px 10px 10px 30px;*/
-    margin: 10px auto;
+/*h3 {*/
+/*    background: yellow;*/
+/*    padding-top: 10%;*/
+/*    border: 2px solid black;*/
+/*    border-right: 10px dashed black;*/
+/*    border-bottom-color: red;*/
+/*    !*border-radius: 10px 10px 10px 30px;*!*/
+/*    margin: 10px auto;*/
 
 
-    width: 200px;
-    height: 200px;
+/*    width: 200px;*/
+/*    height: 200px;*/
 
-}
+/*}*/
 
 div {
     background: yellow;
