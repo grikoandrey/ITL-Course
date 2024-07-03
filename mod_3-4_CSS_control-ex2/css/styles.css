@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    background-image: url("../images/bgintro.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    padding: 35px 0 33px 0;
+}
+
+.logo {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: rgb(245, 218, 11);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-right: 282px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu-item {
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.menu-item a {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+    color: rgb(237, 224, 248);
+    text-decoration: none;
+}
+
+.line {
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    opacity: 0.2;
+}
+
+.layout {
+    padding: 150px 0 205px 0;
+}
+
+.layout-title {
+    font-size: 45px;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.222;
+    max-width: 452px;
+}
+
+.layout-info {
+    margin-top: 80px;
+    margin-bottom: 101px;
+}
+
+.star {
+    vertical-align: bottom;
+    margin-right: 14px;
+}
+
+.layout-text {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+}
+
+.button {
+    width: 222px;
+    padding: 22px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.button.white {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
