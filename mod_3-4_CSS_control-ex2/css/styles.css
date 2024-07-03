@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .container {
@@ -29,6 +30,10 @@
     margin-right: 282px;
 }
 
+.logo a {
+    color: inherit;
+}
+
 .menu {
     display: inline-block;
 }
@@ -43,7 +48,6 @@
     line-height: 1.2;
     font-family: Arial, sans-serif;
     color: rgb(237, 224, 248);
-    text-decoration: none;
 }
 
 .line {
@@ -86,16 +90,117 @@
     width: 222px;
     padding: 22px;
     font-size: 16px;
+    font-weight: bold;
     font-family: Arial, sans-serif;
     text-align: center;
-    border: 0;
     cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    background-color: transparent;
 }
 
 .button.white {
     color: rgb(255, 255, 255);
-    background-color: transparent;
-    border-width: 2px;
     border-color: rgb(255, 255, 255);
-    border-style: solid;
+}
+
+.skills {
+    padding: 140px 0 140px 0;
+}
+
+.skills-title {
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    color: rgb(139, 103, 214);
+    font-weight: bold;
+    line-height: 1.571;
+}
+
+.skills-list {
+    margin-top: 69px;
+}
+
+.skills-list-skill {
+    margin-bottom: 15px;
+}
+
+.skill-text {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: rgb(49, 27, 94);
+    line-height: 1.5;
+}
+
+.course {
+    background-image: url("../images/bgcourse.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.advertising {
+    padding: 140px 0 140px 0;
+    text-align: center;
+}
+
+.banner {
+    width: 996px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 60px 0 44px 0;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    color: rgb(139, 103, 214);
+    line-height: 1.571;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner-text {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: rgb(49, 27, 94);
+    line-height: 1.5;
+    width: 588px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.founder {
+    font-weight: bold;
+}
+
+.p1 {
+    margin-bottom: 24px;
+}
+
+.p2 {
+    margin-bottom: 39px;
+}
+
+.button.violet {
+    color: rgb(177, 128, 228);
+    border-color: rgb(177, 128, 228);
+}
+
+.footer {
+    text-align: center;
+    padding: 46px 0 46px 0;
+}
+
+.logo-footer {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: rgb(245, 218, 11);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.logo-footer a {
+    color: inherit;
 }
