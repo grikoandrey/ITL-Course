@@ -61,13 +61,13 @@ header {
     padding: 20px;
     font-size: 18px;
     color: rgb(255, 255, 255);
-    line-height: 1.2;
+    /*line-height: 1.2;*/
     text-align: center;
     border: 0;
     cursor: pointer;
 }
 
-.button.button-green-full {
+.button.green-full {
     background-color: #2f863c;
     border: 1px solid #2f863c;
     margin-right: 30px;
@@ -79,7 +79,7 @@ header {
 }
 
 .right-food {
-    background: url("../images/background_objects.png")#181717;
+    background: url("../images/background_objects.png") #181717 center;
     padding: 158px 0 160px 0;
 }
 
