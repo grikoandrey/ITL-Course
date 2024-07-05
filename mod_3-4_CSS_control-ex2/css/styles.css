@@ -122,6 +122,7 @@
 
 .skills-list-skill {
     margin-bottom: 15px;
+    list-style-type: none;  /*Добавлено по замечанию 1*/
 }
 
 .skill-text {
@@ -143,11 +144,11 @@
 }
 
 .banner {
-    width: 996px;
+    width: 783px; /*996*/ /*Размер уменьшил из-за замечания 4, был на всю ширину */
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
-    padding: 60px 0 44px 0;
-    margin: 0 auto;
+    padding: 60px 102px 44px 111px;
+    margin: auto;
 }
 
 .banner-title {
@@ -157,6 +158,7 @@
     line-height: 1.571;
     text-align: center;
     margin-bottom: 40px;
+    /*max-width: 783px; !*Добавил ограничение, но надо ли*!*/
 }
 
 .banner-text {
@@ -164,7 +166,7 @@
     font-family: Arial, sans-serif;
     color: rgb(49, 27, 94);
     line-height: 1.5;
-    width: 588px;
+    max-width: 588px; /*Замечание 3. Для текста исправлено на max*/
     text-align: center;
     margin: 0 auto;
 }
@@ -173,11 +175,11 @@
     font-weight: bold;
 }
 
-.p1 {
+.banner-text-item {
     margin-bottom: 24px;
 }
 
-.p2 {
+.banner-text-paragraph {
     margin-bottom: 39px;
 }
 
