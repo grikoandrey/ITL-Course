@@ -1,0 +1,92 @@
+/*.my-button {*/
+/*    margin: 10px;*/
+/*    padding: 10px;*/
+/*    background-color: grey;*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.my-class:hover, span:hover {*/
+/*    background-color: lightblue;*/
+/*}*/
+
+/*div {*/
+/*    width: 600px;*/
+/*    background: yellow;*/
+/*}*/
+
+/*div:hover p {*/
+/*    color: yellow;*/
+/*}*/
+
+/*input:focus {*/
+/*    background: red;*/
+/*    outline: 0;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: #008968;*/
+/*}*/
+
+/*a:active {*/
+/*    color: white;*/
+/*}*/
+
+/*a:visited {*/
+/*    color: red;*/
+/*}*/
+
+/*a:link {*/
+/*    color: blue;*/
+/*}*/
+
+/*.container .item {*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.container .item:first-child {*/
+/*    margin-left: 0;*/
+/*}*/
+
+/*.container .item:last-child {*/
+/*    margin-left: 0;*/
+/*}*/
+
+/*.container .item:nth-child(2n) {*/
+/*    border-bottom: 1px solid black;*/
+/*}*/
+
+/*.container .item:not(:nth-child(2n)) {*/
+/*    border-top: 1px solid darkblue;*/
+/*}*/
+
+.container {
+    border: 10px solid black;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.container::before {
+    content: " ";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
