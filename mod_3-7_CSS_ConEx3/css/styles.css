@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container, .main .container, .menu .container, .chef .container {
+    font-size: 0;
+}
+
+.header {
+    background-color: #020303;
+    padding: 30px 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: 100%;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-text {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+}
+
+.navbar {
+    display: inline-block;
+    margin-left: 282px;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(253, 239, 213);
+    line-height: 1.2;
+}
+
+.navbar ul li a:hover {
+    font-size: 16px;
+    color: rgb(255, 175, 24);
+    line-height: 1.2;
+    border-bottom: 2px solid rgb(255, 175, 24);
+}
+
+.main {
+    padding: 133px 0 80px 0;
+    background-color: #020303;
+}
+
+.main-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 22px;
+    max-width: 564px;
+}
+
+.main-info h1 {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.222;
+}
+
+.main-info h1 span {
+    color: #ffaf18;
+}
+
+.main-stickers {
+    margin: 74px 0 92px 0;
+}
+
+.main-stickers .fresh, .main-stickers .range {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.main-stickers img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-sticker-fresh {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 99px;
+}
+
+.main-sticker-fresh .fresh {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-sticker-range {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-sticker-range .range {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-action-button {
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    line-height: 3.438;
+    text-align: center;
+    background-color: rgb(255, 175, 24);
+    padding: 23px 54px;
+    border-radius: 30px;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-image {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 32px;
+}
+
+.menu {
+    background-color: #020303;
+    padding: 120px 0;
+}
+
+.menu-title {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.571;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menu-item {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px 15px 20px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.menu-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.menu-item:first-child, .menu-item:last-child {
+    box-shadow: inset 0 0 0 5px rgb(237, 155, 0);
+}
+
+.menu-item:hover {
+    box-shadow: 0 0 8px 10px rgba(255, 255, 255, 0.5);
+}
+
+.menu-item-title {
+    font-size: 18px;
+    color: rgb(24, 26, 26);
+    font-weight: bold;
+    line-height: 3.056;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-item-text {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    text-align: center;
+    max-width: 242px;
+    height: 50px;
+    margin-top: 17px;
+    margin-bottom: 15px;
+}
+
+.menu-item-button {
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    line-height: 3.438;
+    text-align: center;
+    background-color: rgb(255, 175, 24);
+    padding: 17px 81px;
+    border-radius: 50px;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-action-button::before,
+.menu-item-button::before {
+    content: "";
+    background: url("../images/Тень.png") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 170%;
+    height: 170%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.main-action-button:hover::before,
+.menu-item-button:hover::before {
+    opacity: 1;
+}
+
+.chef {
+    background-color: #020303;
+    padding: 120px 0 64px 0;
+}
+
+.chef-info {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 385px;
+    margin-right: 47px;
+}
+
+.chef-info-text h3 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.286;
+    margin-bottom: 60px;
+}
+
+.chef-info-text p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    margin-bottom: 100px;
+    /*max-width: 350px;*/
+}
+
+.chef-info-text h5 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.chef-sticker {
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 40px;
+    position: relative;
+}
+
+.chef-sticker:hover {
+    box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.5);
+}
+
+.chef-sticker img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chef-image {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 768px;
+}
+
+.chef-image img {
+    max-width: 100%;
+}
+
+.footer {
+    background-color: #020303;
+    padding: 30px 0;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+    line-height: 1.2;
+    margin-left: 390px;
+}

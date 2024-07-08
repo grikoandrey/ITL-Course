@@ -81,7 +81,7 @@ ul {
     list-style: none;
 }
 
-ul li:before {
+ul li::before {
     content: " ";
     display: inline-block;
     width: 10px;

@@ -207,7 +207,7 @@
 .films-more {
     margin-top: 25px;
     text-align: center;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 }
 
 .show-more {
@@ -218,6 +218,7 @@
     line-height: 25px;
     letter-spacing: 0.08em;
     color: #BDBDBD;
+    margin-top: 5px;
 }
 
 .films-more:hover .show-more{
