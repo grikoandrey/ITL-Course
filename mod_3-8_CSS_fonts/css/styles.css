@@ -1,0 +1,57 @@
+/*@font-face {*/
+/*    font-family: Freakomix;*/
+/*    src: url("../fonts/freakomixbyavdo.ttf");*/
+/*}*/
+/*@font-face {*/
+/*    font-family: Sicretmonopersonal;*/
+/*    src: url("../fonts/Sicretmonopersonal.ttf");*/
+/*}*/
+/*@font-face {*/
+/*    font-family: Sicretmonopersonal;*/
+/*    src: url("../fonts/SicretmonopersonalBold.ttf");*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*!*@font-face {*!*/
+/*!*    font-family: MyFont;*!*/
+/*!*    src: url("../fonts/MyFontBold.ttf") format("truetype");,*!*/
+/*!*    url("../fonts/MyFontBold.woff") format("woff"),*!*/
+/*!*    url("../fonts/MyFontBold.woff2") format("woff2");*!*/
+/*!*}*!*/
+
+/*p {*/
+/*    font-family: Sicretmonopersonal, sans-serif;*/
+/*}*/
+
+/*div {*/
+/*    font-family: Sicretmonopersonal, sans-serif;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*i.fa-apple {*/
+/*    color: darkblue;*/
+/*}*/
+
+/*.button {*/
+/*    padding: 5px 20px;*/
+/*    background-color: darkslategray;*/
+/*    border: 1px solid #020b0b;*/
+/*    font-size: 16px;*/
+/*    color: #dcb058;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+svg {
+    max-width: 200px;
+    fill: #FE6388;
+}
+
+svg:hover {
+    fill: #ffaf18;
+}
+
+svg:hover path:first-child, svg:hover path:nth-child(2) {
+    fill: #8f112f;
+}
+
+
