@@ -1,0 +1,82 @@
+.container {
+    background-color: gray;
+    padding: 30px;
+    margin: 10px;
+    position: relative;
+}
+
+.container2 {
+    background-color: yellow;
+    padding: 30px;
+    position: relative;
+}
+
+.container3 {
+    background-color: black;
+    padding: 30px;
+    position: relative;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    /*display: inline-block;*/
+}
+
+.block.red-bg {
+    background-color: red;
+}
+
+.block.green-bg {
+    background-color: green;
+}
+
+.block.blue-bg {
+    background-color: blue;
+}
+
+.block.second {
+    /*position: relative;*/
+    /*left: 25px;*/
+    /*top: 25px;*/
+    /*margin-left: 20px;*/
+    /*z-index: 1;*/
+    /*position: absolute;*/
+    right: 0;
+    top: 0;
+}
+
+.block.third {
+    /*position: absolute;*/
+    /*position: relative;*/
+    /*z-index: 2;*/
+}
+
+.block.sticky {
+    position: sticky;
+    top: 0;
+
+}
+
+.shadow {
+    display: none;
+    position: fixed;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.popup {
+    position: fixed;
+    background-color: #ffaf18;
+    border: 1px solid #ffaf18;
+    padding: 30px;
+    top: calc(50% - 60px);
+    left: calc(50% - 101px);
+}
+
