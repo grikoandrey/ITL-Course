@@ -1,0 +1,64 @@
+/*.block {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+/*.block.left {*/
+/*    float: left;*/
+/*}*/
+
+/*.block.right {*/
+/*    float: right;*/
+/*}*/
+
+/*.block.clear {*/
+/*    clear: both;*/
+/*}*/
+
+/*.square {*/
+/*    !*float: right;*!*/
+/*    background: gray;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*.block.full-block {*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.block.first {*/
+/*    max-height: 300px;*/
+/*}*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: grey;
+    display: flex;
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    height: 500px;
+    /*max-height: 1000px;*/
+    /*flex-flow: column-reverse wrap;*/
+    align-items: center;
+}
+
+.item {
+    width: 150px;
+    /*height: 150px;*/
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    background: yellow;
+    padding: 30px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.second {
+    order: 5;
+}
+
+.third {
+    order: 4;
+}
