@@ -49,7 +49,7 @@ body {
     margin: 0 auto;
 }
 
-header .logo {
+.header .logo {
     display: inline-block;
     vertical-align: middle;
 }
@@ -237,4 +237,39 @@ header .logo {
 
 .fix-block img {
     vertical-align: middle;
+}
+
+.footer {
+    background-color: #31393f;
+    padding: 54px 0 49px 0;
+}
+
+.footer .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-contacts {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 899px;
+    max-width: 139px;
+    text-align: center;
+}
+
+.footer-contacts h4 {
+    font-size: 18px;
+    color: rgb(167, 185, 197);
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 8px;
+}
+
+.footer-contacts a {
+    font-size: 14px;
+    color: rgb(131, 145, 156);
+    line-height: 1.2;
+    margin-top: 7px;
+    display: block;
 }
