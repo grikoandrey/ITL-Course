@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerRegular.otf");
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../fonts/MullerBold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: MullerExtrabold;
+    src: url("../fonts/MullerExtraBold.otf");
+}
+
+body {
+    font-size: 0;
+    font-family: Muller, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 14px 2px rgba(152, 152, 152, 0.2);
+    padding: 16px 0 15px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+
+}
+
+.menu ul {
+    display: flex;
+    width: 489px;
+    justify-content: space-between;
+}
+
+.menu-item a {
+    font-size: 16px;
+    color: rgb(164, 107, 0);
+    line-height: 1;
+}
+
+.main {
+    padding: 132px 0 81px 0;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-info {
+    max-width: 622px;
+}
+
+.main-info h1 {
+    font-family: MullerExtrabold, sans-serif;
+    font-size: 45px;
+    line-height: 1.222;
+}
+
+.double-title span {
+    color: #ffaf18;
+}
+
+.double-title {
+    color: rgb(185, 145, 80);
+}
+
+.advantages {
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantage {
+    max-width: 283px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 47px;
+}
+
+.advantage-text {
+    margin-left: 16px;
+}
+
+.advantage-text h5 {
+    font-size: 16px;
+    font-family: MullerExtrabold, sans-serif;
+    color: rgb(255, 175, 24);
+    text-transform: uppercase;
+    /*line-height: 1.5;*/
+    margin-bottom: 10px;
+}
+
+.advantage-text p {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1;
+}
+
+.main-action {
+    margin-top: 60px;
+}
+
+.btn {
+    background-color: rgb(255, 175, 24);
+    width: 224px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 22px;
+    font-size: 16px;
+    color: rgb(56, 36, 0);
+    font-weight: bold;
+}
+
+.products {
+    padding: 80px 0 120px 0;
+}
+
+.products-title {
+    font-size: 35px;
+    color: rgb(189, 152, 92);
+    font-weight: bold;
+    text-align: center;
+}
+
+.products-items {
+    display: flex;
+    margin-top: 35px;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: 282px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 14px 2px rgba(152, 152, 152, 0.2);
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 24px;
+}
+
+.product-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+
+}
+
+.product-info h6 {
+    font-size: 18px;
+    color: rgb(56, 36, 0);
+    font-weight: bold;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    height: 49px;
+    margin: 14px 0 15px 0;
+}
+
+.product-action .btn {
+    width: 242px;
+    height: 50px;
+    padding: 17px;
+}
+
+.order {
+    padding: 120px 0 115px 0;
+    overflow: hidden;
+}
+
+.order .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.order-text {
+    max-width: 384px;
+}
+
+.order-text h2 {
+    font-family: MullerExtrabold, sans-serif;
+    font-size: 35px;
+    line-height: 1.286;
+    margin-bottom: 65px;
+}
+
+.order-text p {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1.5;
+}
+
+.order-form {
+    margin-left: 122px;
+    max-width: 330px;
+}
+
+.order-input {
+    border-width: 1px;
+    border-color: rgb(185, 145, 80);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 330px;
+    height: 60px;
+    font-size: 18px;
+    color: rgb(185, 145, 80);
+    padding: 23px 22px 24px 22px;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+.order-input::placeholder {
+    color: rgb(203, 168, 110);
+}
+
+.order .btn {
+    width: 330px;
+    height: 60px;
+}
+
+.order-image {
+    width: 282px;
+    position: relative;
+    margin-left: 78px;
+}
+
+.order-image img {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+}
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 14px 2px rgba(152, 152, 152, 0.2);
+    padding: 16px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.rights {
+    font-size: 12px;
+    color: rgb(186, 179, 179);
+    margin-left: 358px;
+}
+
+.burger {
+    display: none;
+}
+
+.exit {
+    display: none;
+}
