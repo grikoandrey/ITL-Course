@@ -98,13 +98,12 @@ body {
     max-width: 216px;
     position: fixed;
     bottom: 16px;
-    /*left: 0;*/
-    /*display: block;*/
 }
 
 .feedback:hover {
-    border: 1px solid #467DF2;
+    /*border: 1px solid #467DF2;*/
     border-radius: 5px;
+    outline: 1px solid #467DF2;
 }
 
 .feedback img {
@@ -363,7 +362,7 @@ body {
     background: #467DF2;
     border-radius: 10px 10px 0 0;
     transform: rotate(-90deg);
-    position: fixed;
+    position: absolute;
     top: 300px;
     right: -71px;
     display: flex;
@@ -383,4 +382,6 @@ body {
 .support:hover {
     padding-bottom: 30px;
     background: #2F54A3;
+    right: -61px;
+    top: 290px;
 }
