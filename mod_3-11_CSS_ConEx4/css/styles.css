@@ -299,7 +299,7 @@ body {
     top: 0;
 }
 
-.dashboard-item-image:hover::after {
+.dashboard-item:hover .dashboard-item-image::after {
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 0 0;
