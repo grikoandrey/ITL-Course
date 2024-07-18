@@ -1,0 +1,138 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*padding: 10px;*/
+    background: grey;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav content content content"
+        "nav article article article"
+        ".... footer footer footer";
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.header {
+    grid-area: header;
+    background: #ffaf18;
+}
+
+.menu {
+    grid-area: nav;
+    background: #2F54A3;
+}
+
+.block {
+    grid-area: content;
+}
+
+article {
+    grid-area: article;
+}
+
+.footer {
+    grid-area: footer;
+    background: #1F1F1F;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "content content content content"
+            "carticle article article article"
+            "footer footer footer footer";
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+/*.block {*/
+/*    background: orange;*/
+/*    !*padding: 10px;*!*/
+/*    display: grid;*/
+/*    !*grid-template-columns: 200px repeat(3, minmax(200px, 1fr));*!*/
+/*    !*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*!*/
+/*    !*grid-template-columns: repeat(3, 50px);*!*/
+/*    !*grid-template-columns: fit-content(500px) 50px 50px;*!*/
+/*    !*grid-template-columns: 1fr 1fr 1fr;*!*/
+/*    !*grid-template-rows: repeat(2, 50px);*!*/
+/*    !*grid-template-rows: 50px auto;*!*/
+/*    !*grid-template-rows: 50px 50px;*!*/
+/*    grid-template: [row1] 50px [row2] 50px / [col1] 1fr [col2] 1fr [col3] 1fr;*/
+/*    !*grid-gap: 10px 20px;*!*/
+/*    gap: 10px 20px;*/
+/*    !*grid-column-gap: 10px;*!*/
+/*    !*grid-row-gap: 30px;*!*/
+/*    grid-auto-rows: 100px;*/
+/*    grid-auto-columns: 100px;*/
+/*    !*grid-auto-flow: column;*!*/
+/*    !*align-items: start;*!*/
+/*    !*justify-items: center;*!*/
+
+/*}*/
+
+/*!*.second-container .block{*!*/
+/*!*    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*!*/
+/*!*}*!*/
+
+/*.element {*/
+/*    background: yellow;*/
+/*}*/
+
+/*!*.second {*!*/
+/*!*    !*grid-row-start: 2;*!*!*/
+/*!*    !*grid-column-start: 3;*!*!*/
+/*!*    grid-column: col3;*!*/
+/*!*    !*grid-row-end: 5;*!*!*/
+/*!*    grid-row: row2 / 5;*!*/
+/*!*}*!*/
+
+/*!*.fifth {*!*/
+/*!*    !*grid-row-start: 1;*!*!*/
+/*!*    !*grid-column-start: 1;*!*!*/
+/*!*    !*grid-row-end: 5;*!*!*/
+/*!*    !*grid-column-end: 3;*!*!*/
+/*!*    grid-column: col1 / col3;*!*/
+/*!*}*!*/
+
+/*.el1 {*/
+/*    order: 1;*/
+/*    !*position: absolute;*!*/
+/*    !*z-index: 2;*!*/
+/*}*/
+
+/*.el2 {*/
+/*    order: 3;*/
+/*}*/
+
+/*.el3 {*/
+/*    order: 2;*/
+/*}*/
+
+/*.el4 {*/
+/*    order: 4;*/
+/*}*/
+
+/*.el5 {*/
+/*    order: 5;*/
+/*    !*margin: auto;*!*/
+/*}*/
+
+/*.el6 {*/
+/*    order: 6;*/
+/*}*/
+
+/*.small-block {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*}*/
+
+/*.element-small {*/
+/*    background: red;*/
+/*}*/
