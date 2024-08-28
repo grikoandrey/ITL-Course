@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eba8b1;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+/*---------------------------fonts---------------------------*/
+@font-face {
+    font-family: Tavolga;
+    src: url("../fonts/Tavolga-Free.ttf");
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-Light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/gilroy-regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/gilroy-medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/gilroy-bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-ExtraBold.otf");
+    font-weight: 800;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+/*---------------------------styles for header---------------------------*/
+.header {
+    background-color: transparent;
+    padding: 36px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__text {
+    font-family: Tavolga, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.header__nav {
+    margin-right: 97px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__menu-item {
+    font-family: "Gilroy", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(119, 11, 29);
+    transition: all .3s ease-in-out;
+}
+
+.header__menu-item:hover {
+    border-bottom: 2px solid rgb(130, 19, 40);
+}
+
+.phone__text {
+    font-size: 16px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.header__burger, .exit {
+    display: none;
+}
+/*---------------------------styles for main section---------------------------*/
+.main {
+    padding: 120px 0 108px 0;
+}
+
+.main__container {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+    flex-wrap: wrap;
+}
+
+.main__info {
+    padding-top: 12px;
+    font-family: "Tavolga", sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 580px;
+}
+
+.main__title {
+    font-size: 55px;
+    line-height: 1.091;
+    margin-bottom: 60px;
+}
+
+.main__text {
+    font-size: 18px;
+    line-height: 1.389;
+    max-width: 345px;
+    margin-bottom: 80px;
+}
+
+.button {
+    font-size: 18px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+    border-radius: 30px;
+    border: none;
+    padding: 19px 44px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /*width: 240px;*/
+    /*height: 60px;*/
+}
+
+.button:hover {
+    box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
+}
+/*---------------------------styles for advantages section---------------------------*/
+.advantages {
+    padding: 120px 0;
+    background-color: #ffefef;
+}
+
+.advantages__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+    grid-template-rows: auto auto; /* Две строки */
+    gap: 80px; /* Промежуток между блоками (опционально) */
+}
+
+.advantages__info {
+    grid-column: 1; /* Первая колонка */
+    grid-row: 1; /* Первая строка */
+    display: grid;
+    grid-template-rows: auto;
+    gap: 60px;
+}
+
+.advantages__title {
+    font-size: 45px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.222;
+    max-width: 475px;
+}
+
+.advantages__text {
+    font-size: 18px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(51, 25, 7);
+    font-weight: 500;
+    line-height: 1.556;
+    max-width: 405px;
+}
+
+.advantages__image {
+    grid-column: 2; /* Вторая колонка */
+    grid-row: 1; /* Первая строка */
+    align-content: end;
+    text-align: end;
+}
+
+.advantages__items {
+    grid-column: 1 / span 2; /* Занимает обе колонки */
+    grid-row: 2; /* Вторая строка */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 81px;
+    font-size: 15px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.333;
+}
+
+.adv-item__num {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    line-height: 0.65;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(130, 19, 40);
+    align-content: end;
+    text-align: center;
+    transform: translateY(5px);
+    margin-bottom: 13px;
+    transition: all 1s ease-in-out;
+}
+
+.advantage__item:hover .adv-item__num {
+    color: rgb(130, 19, 40);
+    background-color: rgb(235, 168, 177);
+}
+
+.adv-item__title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+/*---------------------------styles for assortment section---------------------------*/
+.assortment {
+    padding: 120px 0;
+}
+
+.assortment__content {
+    padding: 0 5px;
+}
+
+.assortment__title {
+    text-align: center;
+    margin-bottom: 147px;
+    font-size: 45px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.assortment__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 29px;
+}
+
+.assortment__item {
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0 18px 24px 18px;
+    position: relative;
+    min-height: 230px;
+    max-width: 263px;
+    align-content: end;
+}
+
+.ass-item__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+    transition: all .8s ease-in-out;;
+}
+
+.assortment__item:hover .ass-item__image {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.assortment__item-title {
+    font-size: 18px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 26px;
+}
+
+.assortment__item-order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.assortment__item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(255, 255, 255);
+    min-width: max-content;
+    align-items: flex-start;
+}
+
+.assortment__btn {
+    padding: 19px 26px;
+}
+/*---------------------------styles for order section---------------------------*/
+.order {
+    padding: 98px 0 120px 0;
+    background-color: #ffefef;
+}
+
+.order__container {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.order__images {
+    position: relative;
+}
+
+.order__images-strawberry {
+    position: absolute;
+    top: -26px;
+    left: -27px;
+}
+
+.order__form {
+    max-width: 406px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.order__form-title {
+    font-size: 45px;
+    font-family: Tavolga, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.222;
+    margin-bottom: 41px;
+}
+
+.order__form-text {
+    font-size: 18px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(51, 25, 7);
+    line-height: 1.556;
+    margin-bottom: 48px;
+}
+
+.order__form-info {
+    font-size: 18px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(18, 10, 6);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.order__form-input {
+    font-size: 15px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(118, 12, 34);
+    background-color: transparent;
+    font-weight: bold;
+    border-width: 1px;
+    border-color: rgb(130, 19, 40);
+    border-style: solid;
+    border-radius: 30px;
+    padding: 20px 25px;
+    max-width: 294px;
+    /*height: 59px;*/
+}
+
+.order__form-choice {
+    margin-bottom: 40px;
+}
+
+.order__form-name, .order__form-phone {
+    margin-bottom: 15px;
+}
+
+.order__button {
+    padding: 20px 20px;
+    width: 293px;
+}
+
+.order__image-strawberry {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+}
+/*---------------------------styles for footer---------------------------*/
+.footer {
+    padding: 73px 0 62px 0;
+    background-color: rgb(192, 112, 124);
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.footer__rights {
+    font-size: 12px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(227, 172, 180);
+    margin-bottom: 19px;
+}
+
+.footer__instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__instagram-text {
+    font-size: 16px;
+    font-family: Gilroy, sans-serif;
+    font-weight: bold;
+}
+/*---------------------------styles for present section---------------------------*/
+.present {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    z-index: 10;
+    transition: all .5s ease-in-out;
+}
+
+.present:hover {
+    box-shadow: 0 0 13px 3px rgba(130, 19, 40, 0.5);
+}
+
+.present__box, .present__round {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.present__text {
+    position: absolute;
+    right: 189px;
+    bottom: 45px;
+    transform: translateY(110px); /* Изначально скрываем блок (сдвинут вниз) */
+    opacity: 0; /* Изначально блок невидим */
+    transition: all 1.5s ease-in-out;
+}
+
+.present:hover .present__text {
+    transform: translateY(0); /* Возвращаем блок на место при наведении */
+    opacity: 1; /* Делаем блок видимым */
+}
+
+.present__field, .present__message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.present__message {
+    font-size: 15px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(119, 10, 29);
+    line-height: 1.333;
+    min-width: 150px;
+}
+/*---------------------------styles for animation---------------------------*/
+.order__images-strawberry {
+    animation: moving 2.5s linear infinite;
+}
+
+.order__image-strawberry {
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.main__image {
+    position: relative;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.main__img {
+    position: relative;
+    z-index: 1;
+}
+
+.main__round {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgb(113, 8, 30);
+
+}
+
+.main__round.first {
+    animation: rounding 4s linear infinite;
+    animation-delay: 0s; /* Первый круг стартует сразу */
+}
+
+.main__round.second {
+    animation: rounding 3s linear infinite;
+    animation-delay: 1s; /* Второй круг стартует через 1 секунду после первого */
+}
+
+@keyframes rounding {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(2.5);
+        opacity: 0;
+    }
+}
+

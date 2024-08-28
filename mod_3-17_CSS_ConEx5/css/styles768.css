@@ -1,0 +1,111 @@
+@media screen and (max-width: 1118px){
+    .header__nav {
+        margin-right: 0;
+    }
+    .main__image {
+        position: relative;
+        margin-left: 22%;
+        top: -90px;
+    }
+    .advantages__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .advantages__info {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        gap: 60px;
+    }
+    .advantages__text {
+        max-width: 680px;
+    }
+    .advantages__image {
+        text-align: center;
+    }
+    .advantages__img {
+        max-width: 302px;
+    }
+    .advantages__items {
+        display: grid;
+        grid-template-columns: repeat(2, 220px);
+        gap: 81px;
+        justify-content: center;
+    }
+    .adv-item__num {
+        margin: 0 auto 13px auto;
+    }
+    .assortment__items {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 29px;
+        justify-content: center;
+    }
+    .assortment__item.item1, .assortment__item.item2 {
+        margin-bottom: 107px;
+    }
+    .assortment__item {
+        min-width: 263px;
+    }
+    .order__container {
+        padding-right: 0;
+    }
+    .order__images {
+        order: 2;
+    }
+    .order__images-strawberry {
+        top: 60px;
+        left: -60px;
+    }
+    .order__images-macaroons {
+        max-width: 352px;
+        right: 10%;
+        position: relative;
+        bottom: -100px;
+    }
+    .order__image-strawberry {
+        right: -58%;
+        bottom: 65%;
+    }
+    .order__form {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .header__container {
+        justify-content: start;
+    }
+    .header__phone {
+        display: none;
+    }
+    .header__nav {
+        margin-left: 103px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main__img {
+        max-width: 100%;
+        height: auto;
+    }
+    .order__images-macaroons {
+        max-width: 100%;
+        height: auto;
+    }
+    .order__image-strawberry {
+        right: -58%;
+        bottom: 65%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main__title {
+        font-size: 48px;
+    }
+    .order__image {
+        display: none;
+    }
+}
