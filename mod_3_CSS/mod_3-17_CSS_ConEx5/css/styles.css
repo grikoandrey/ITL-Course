@@ -51,12 +51,11 @@ ul, li, a {
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 18px;
 }
 /*---------------------------styles for header---------------------------*/
 .header {
     background-color: transparent;
-    padding: 36px 0;
+    padding: 36px 18px;
 }
 
 .header__container {
@@ -88,7 +87,7 @@ ul, li, a {
     font-size: 14px;
     font-weight: 500;
     color: rgb(119, 11, 29);
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .header__menu-item:hover {
@@ -106,13 +105,12 @@ ul, li, a {
 }
 /*---------------------------styles for main section---------------------------*/
 .main {
-    padding: 120px 0 108px 0;
+    padding: 120px 20px 108px 20px;
 }
 
 .main__container {
     display: flex;
-    justify-content: center;
-    padding: 0 5px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -146,7 +144,7 @@ ul, li, a {
     border: none;
     padding: 19px 44px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     /*width: 240px;*/
     /*height: 60px;*/
 }
@@ -156,7 +154,7 @@ ul, li, a {
 }
 /*---------------------------styles for advantages section---------------------------*/
 .advantages {
-    padding: 120px 0;
+    padding: 119px 50px 123px 50px;
     background-color: #ffefef;
 }
 
@@ -224,7 +222,7 @@ ul, li, a {
     text-align: center;
     transform: translateY(5px);
     margin-bottom: 13px;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .advantage__item:hover .adv-item__num {
@@ -241,10 +239,6 @@ ul, li, a {
 /*---------------------------styles for assortment section---------------------------*/
 .assortment {
     padding: 120px 0;
-}
-
-.assortment__content {
-    padding: 0 5px;
 }
 
 .assortment__title {
@@ -281,7 +275,7 @@ ul, li, a {
     transform: translate(-50%, -50%);
     max-width: 100%;
     height: auto;
-    transition: all .8s ease-in-out;;
+    transition: all .3s ease-in-out;;
 }
 
 .assortment__item:hover .ass-item__image {
@@ -316,7 +310,7 @@ ul, li, a {
 }
 /*---------------------------styles for order section---------------------------*/
 .order {
-    padding: 98px 0 120px 0;
+    padding: 98px 19px 120px 18px;
     background-color: #ffefef;
 }
 
@@ -402,7 +396,7 @@ ul, li, a {
 }
 /*---------------------------styles for footer---------------------------*/
 .footer {
-    padding: 73px 0 62px 0;
+    padding: 73px 20px 62px 19px;
     background-color: rgb(192, 112, 124);
 }
 
@@ -411,6 +405,9 @@ ul, li, a {
     align-items: center;
     justify-content: space-between;
     color: rgb(255, 255, 255);
+}
+.footer__logo {
+    margin-bottom: 19px;
 }
 
 .footer__rights {
@@ -441,7 +438,8 @@ ul, li, a {
     width: 86px;
     height: 86px;
     z-index: 10;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 .present:hover {
@@ -461,7 +459,7 @@ ul, li, a {
     bottom: 45px;
     transform: translateY(110px); /* Изначально скрываем блок (сдвинут вниз) */
     opacity: 0; /* Изначально блок невидим */
-    transition: all 1.5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .present:hover .present__text {
@@ -506,9 +504,6 @@ ul, li, a {
 
 .main__image {
     position: relative;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .main__img {
@@ -529,13 +524,13 @@ ul, li, a {
 }
 
 .main__round.first {
-    animation: rounding 4s linear infinite;
+    animation: rounding 2s linear infinite;
     animation-delay: 0s; /* Первый круг стартует сразу */
 }
 
 .main__round.second {
-    animation: rounding 3s linear infinite;
-    animation-delay: 1s; /* Второй круг стартует через 1 секунду после первого */
+    animation: rounding 1.7s linear infinite;
+    animation-delay: 0.3s; /* Второй круг стартует через 1 секунду после первого */
 }
 
 @keyframes rounding {
@@ -544,7 +539,7 @@ ul, li, a {
         opacity: 1;
     }
     to {
-        transform: translate(-50%, -50%) scale(2.5);
+        transform: translate(-50%, -50%) scale(2.2);
         opacity: 0;
     }
 }

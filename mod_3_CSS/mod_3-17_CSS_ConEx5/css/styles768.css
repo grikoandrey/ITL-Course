@@ -29,10 +29,12 @@
         max-width: 302px;
     }
     .advantages__items {
-        display: grid;
         grid-template-columns: repeat(2, 220px);
-        gap: 81px;
+        gap: 54px;
         justify-content: center;
+    }
+    .advantage__item:nth-child(-n+2) {
+        margin-bottom: 26px;
     }
     .adv-item__num {
         margin: 0 auto 13px auto;
@@ -49,9 +51,6 @@
     .assortment__item {
         min-width: 263px;
     }
-    .order__container {
-        padding-right: 0;
-    }
     .order__images {
         order: 2;
     }
@@ -61,20 +60,42 @@
     }
     .order__images-macaroons {
         max-width: 352px;
-        right: 10%;
         position: relative;
         bottom: -100px;
     }
     .order__image-strawberry {
         right: -58%;
-        bottom: 65%;
+        bottom: 60%;
     }
     .order__form {
         order: 1;
     }
+
+    .main__round {
+        width: 230px;
+        height: 230px;
+    }
+    .main__round.first {
+        animation: rounding 2s linear infinite;
+        animation-delay: 0s; /* Первый круг стартует сразу */
+    }
+    .main__round.second {
+        animation: rounding 1.5s linear infinite;
+        animation-delay: 0.5s; /* Второй круг стартует через 1 секунду после первого */
+    }
+    @keyframes rounding {
+        from {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 0;
+        }
+    }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     .header__container {
         justify-content: start;
     }
@@ -107,5 +128,27 @@
     }
     .order__image {
         display: none;
+    }
+    .main__round {
+        width: 200px;
+        height: 200px;
+    }
+    .main__round.first {
+        animation: rounding 2s linear infinite;
+        animation-delay: 0s; /* Первый круг стартует сразу */
+    }
+    .main__round.second {
+        animation: rounding 1.5s linear infinite;
+        animation-delay: 0.5s; /* Второй круг стартует через 1 секунду после первого */
+    }
+    @keyframes rounding {
+        from {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 0;
+        }
     }
 }

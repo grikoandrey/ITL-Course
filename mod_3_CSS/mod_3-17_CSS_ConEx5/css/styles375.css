@@ -1,4 +1,7 @@
 @media screen and (max-width: 585px){
+    .header {
+        padding: 36px 18px 36px 15px;
+    }
     .header__container {
         justify-content: space-between;
     }
@@ -7,7 +10,7 @@
     }
     /*---------------------------styles for main section---------------------------*/
     .main {
-        padding: 50px 0 43px 0;
+        padding: 50px 19px 43px 19px;
     }
     .main__container {
         gap: 38px;
@@ -34,7 +37,7 @@
     }
     /*---------------------------styles for advantages section---------------------------*/
     .advantages {
-        padding: 100px 0 80px 0;
+        padding: 100px 15px;
     }
     .advantages__title {
         font-size: 30px;
@@ -46,7 +49,7 @@
         grid-template-columns: repeat(2, 162px);
         gap: 16px;
     }
-    .advantage__item {
+    .advantage__item:nth-child(-n+2) {
         margin-bottom: 20px;
     }
     .adv-item__title {
@@ -56,6 +59,9 @@
         font-size: 13px;
     }
     /*---------------------------styles for assortment section---------------------------*/
+    .assortment {
+        padding: 100px 17px 100px 20px;
+    }
     .assortment__title {
         font-size: 30px;
     }
@@ -69,7 +75,6 @@
     .order__container {
         align-items: start;
         justify-content: start;
-        padding: 0 16px;
     }
     .order__form-title {
         font-size: 30px;
@@ -85,21 +90,6 @@
         display: none;
     }
     /*---------------------------styles for animation---------------------------*/
-    .main__round {
-        width: 200px;
-        height: 200px;
-
-    }
-    @keyframes rounding {
-        from {
-            transform: translate(-50%, -50%) scale(1);
-            opacity: 1;
-        }
-        to {
-            transform: translate(-50%, -50%) scale(2);
-            opacity: 0;
-        }
-    }
     @keyframes moving {
         from {
             transform: translateY(0);
@@ -121,6 +111,7 @@
         gap: 40px;
     }
     .footer__logo {
+        margin-bottom: 0;
         order: 1;
     }
     .footer__phone {
@@ -185,14 +176,8 @@
     .header__burger {
         display: block;
     }
-    .advantages__container {
-        padding: 0 12px;
-    }
-    .advantages__img {
-        max-width: 100%;
-    }
     .order__images-strawberry {
-        top: 130px;
+        top: 120px;
         left: -85px;
     }
     .order__form-input {
@@ -217,11 +202,40 @@
         right: 170px;
         bottom: 36px;
     }
+    .main__round {
+        width: 160px;
+        height: 160px;
+    }
+    @keyframes rounding {
+        from {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 370px){
     .advantages__items {
         grid-template-columns: repeat(2, 110px);
         gap: 26px;
+    }
+    .advantages__img {
+        max-width: 100%;
+    }
+    .main__round {
+        width: 120px;
+        height: 120px;
+    }
+    .main__round.first {
+        animation: rounding 1.5s linear infinite;
+        animation-delay: 0s;
+    }
+    .main__round.second {
+        animation: rounding 1.3s linear infinite;
+        animation-delay: 0.2s;
     }
 }
