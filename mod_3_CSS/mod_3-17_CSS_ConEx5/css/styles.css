@@ -6,12 +6,14 @@
 
 body {
     background-color: #eba8b1;
+    font-size: 0;
 }
 
 ul, li, a {
     text-decoration: none;
     list-style: none;
 }
+
 /*---------------------------fonts---------------------------*/
 @font-face {
     font-family: Tavolga;
@@ -52,6 +54,7 @@ ul, li, a {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 /*---------------------------styles for header---------------------------*/
 .header {
     background-color: transparent;
@@ -100,9 +103,11 @@ ul, li, a {
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
+
 .header__burger, .exit {
     display: none;
 }
+
 /*---------------------------styles for main section---------------------------*/
 .main {
     padding: 120px 20px 108px 20px;
@@ -139,6 +144,7 @@ ul, li, a {
     font-family: "Gilroy", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    line-height: 1;
     background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
     border-radius: 30px;
     border: none;
@@ -146,12 +152,13 @@ ul, li, a {
     cursor: pointer;
     transition: all .2s ease-in-out;
     /*width: 240px;*/
-    /*height: 60px;*/
+    height: 60px;
 }
 
 .button:hover {
     box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
 }
+
 /*---------------------------styles for advantages section---------------------------*/
 .advantages {
     padding: 119px 50px 123px 50px;
@@ -236,6 +243,7 @@ ul, li, a {
     line-height: 1;
     margin-bottom: 20px;
 }
+
 /*---------------------------styles for assortment section---------------------------*/
 .assortment {
     padding: 120px 0;
@@ -261,7 +269,7 @@ ul, li, a {
     border-style: solid;
     border-radius: 20px;
     text-align: center;
-    padding: 0 18px 24px 18px;
+    padding: 0 21px 27px 21px;
     position: relative;
     min-height: 230px;
     max-width: 263px;
@@ -292,6 +300,7 @@ ul, li, a {
 .assortment__item-order {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .assortment__item-info {
@@ -303,11 +312,17 @@ ul, li, a {
     color: rgb(255, 255, 255);
     min-width: max-content;
     align-items: flex-start;
+    line-height: 0.67;
 }
 
 .assortment__btn {
     padding: 19px 26px;
+    font-size: 16px;
+    line-height: 0.75;
+    min-width: 130px;
+    height: 50px;
 }
+
 /*---------------------------styles for order section---------------------------*/
 .order {
     padding: 98px 19px 120px 18px;
@@ -394,6 +409,7 @@ ul, li, a {
     right: 0;
     bottom: 80px;
 }
+
 /*---------------------------styles for footer---------------------------*/
 .footer {
     padding: 73px 20px 62px 19px;
@@ -406,6 +422,7 @@ ul, li, a {
     justify-content: space-between;
     color: rgb(255, 255, 255);
 }
+
 .footer__logo {
     margin-bottom: 19px;
 }
@@ -429,6 +446,7 @@ ul, li, a {
     font-family: Gilroy, sans-serif;
     font-weight: bold;
 }
+
 /*---------------------------styles for present section---------------------------*/
 .present {
     position: fixed;
@@ -460,6 +478,7 @@ ul, li, a {
     transform: translateY(110px); /* Изначально скрываем блок (сдвинут вниз) */
     opacity: 0; /* Изначально блок невидим */
     transition: all .5s ease-in-out;
+
 }
 
 .present:hover .present__text {
@@ -467,11 +486,39 @@ ul, li, a {
     opacity: 1; /* Делаем блок видимым */
 }
 
-.present__field, .present__message {
+.present__field {
+    border-width: 2px;
+    border-color: rgb(119, 10, 29);
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(254, 239, 238);
+    width: 168px;
+    height: 60px;
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    align-content: center;
+}
+
+.present__field:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: calc(50% - 11px);
+    border-top: 10px solid transparent;
+    border-right: 11px solid rgb(119, 10, 29);
+    border-bottom: 10px solid transparent;
+    rotate: 200grad;
+}
+
+.present__field:after {
+    content: "";
+    position: absolute;
+    left: calc(100% - 3px);
+    top: calc(50% - 11px);
+    border-top: 10px solid transparent;
+    border-right: 11px solid rgb(254, 239, 238);
+    border-bottom: 10px solid transparent;
+    rotate: 200grad;
 }
 
 .present__message {
@@ -480,7 +527,9 @@ ul, li, a {
     color: rgb(119, 10, 29);
     line-height: 1.333;
     min-width: 150px;
+    margin-left: 11px;
 }
+
 /*---------------------------styles for animation---------------------------*/
 .order__images-strawberry {
     animation: moving 2.5s linear infinite;
@@ -520,6 +569,7 @@ ul, li, a {
     height: 250px;
     border-radius: 50%;
     border: 1px solid rgb(113, 8, 30);
+    z-index: -1;
 
 }
 
@@ -539,7 +589,7 @@ ul, li, a {
         opacity: 1;
     }
     to {
-        transform: translate(-50%, -50%) scale(2.2);
+        transform: translate(-50%, -50%) scale(2.6);
         opacity: 0;
     }
 }

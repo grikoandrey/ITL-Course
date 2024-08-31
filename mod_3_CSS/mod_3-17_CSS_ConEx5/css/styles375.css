@@ -212,7 +212,7 @@
             opacity: 1;
         }
         to {
-            transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2.2);
             opacity: 0;
         }
     }

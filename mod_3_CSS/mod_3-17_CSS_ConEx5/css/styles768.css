@@ -1,10 +1,10 @@
-@media screen and (max-width: 1118px){
+@media screen and (max-width: 1148px){
     .header__nav {
         margin-right: 0;
     }
     .main__image {
         position: relative;
-        margin-left: 22%;
+        margin-left: 27%;
         top: -90px;
     }
     .advantages__content {
@@ -89,7 +89,7 @@
             opacity: 1;
         }
         to {
-            transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2.5);
             opacity: 0;
         }
     }
@@ -147,7 +147,7 @@
             opacity: 1;
         }
         to {
-            transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2.5);
             opacity: 0;
         }
     }
