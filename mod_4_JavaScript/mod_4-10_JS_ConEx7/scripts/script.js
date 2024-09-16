@@ -93,33 +93,32 @@ function getBirthday(el) {
     let today = new Date();
     // console.log(date);
     // console.log(today);
-    if (today.getFullYear() === date.getFullYear() &&
-        today.getMonth() === date.getMonth() &&
+    if (today.getMonth() === date.getMonth() &&
         today.getDate() === date.getDate()) {
-        return `${toLocalString(date)} (сегодня)`;
+        return `${date.toLocaleDateString('ru-RU', {day: 'numeric', month: 'long'})} (сегодня)`;
     } else {
-        return toLocalString(date);
+        return date.toLocaleDateString('ru-RU', {day: 'numeric', month: 'long'});
     }
 }
 
-function toLocalString(date) {
-    let monthName;
-    switch(date.getMonth()) {
-        case 0: monthName = 'января'; break;
-        case 1: monthName = 'февраля'; break;
-        case 2: monthName = 'марта'; break;
-        case 3: monthName = 'апреля'; break;
-        case 4: monthName = 'мая'; break;
-        case 5: monthName = 'июня'; break;
-        case 6: monthName = 'июля'; break;
-        case 7: monthName = 'августа'; break;
-        case 8: monthName = 'сентября'; break;
-        case 9: monthName = 'октября'; break;
-        case 10: monthName = 'ноября'; break;
-        case 11: monthName = 'декабря'; break;
-    }
-    return `${date.getDate()} ${monthName}`;
-}
+// function toLocalString(date) {
+//     let monthName;
+//     switch(date.getMonth()) {
+//         case 0: monthName = 'января'; break;
+//         case 1: monthName = 'февраля'; break;
+//         case 2: monthName = 'марта'; break;
+//         case 3: monthName = 'апреля'; break;
+//         case 4: monthName = 'мая'; break;
+//         case 5: monthName = 'июня'; break;
+//         case 6: monthName = 'июля'; break;
+//         case 7: monthName = 'августа'; break;
+//         case 8: monthName = 'сентября'; break;
+//         case 9: monthName = 'октября'; break;
+//         case 10: monthName = 'ноября'; break;
+//         case 11: monthName = 'декабря'; break;
+//     }
+//     return `${date.getDate()} ${monthName}`;
+// }
 // console.log(getBirthday(clients[0].date));
 //-------------exercise 3--------------
 function getAllAmount(param) {
@@ -150,12 +149,12 @@ showClients = (array) => {
 //-------------exercise 7--------------
 showClients(clients);
 //-------------exercise 8--------------
-// try {
-//     showClients();
-// } catch (err) {
-//     console.log('Вызвана функция без параметров');
-//     console.log(err);
-// }
+try {
+    showClients();
+} catch (err) {
+    console.log('Вызвана функция без параметров');
+    console.log(err);
+}
 //-------------exercise 10--------------
 setTimeout(() => { showClients(bestClients); }, 4000);
 
