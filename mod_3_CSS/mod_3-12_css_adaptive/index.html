@@ -126,7 +126,7 @@
 
 <section class="products">
     <div class="container">
-        <h2 class="products-title">Выберите свою любимую пиццу</h2>
+        <h2 class="products-title" id="products-title">Выберите свою любимую пиццу</h2>
         <div class="products-items">
             <div class="product">
                 <div class="product-image">
@@ -161,7 +161,7 @@
                     <p>Бекон, сыр, сосиски, ананас, томатная паста</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn" id="no-touch">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -237,8 +237,8 @@
                 сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
         </div>
         <div class="order-form">
-            <input type="text" class="order-input" placeholder="Ваше имя">
-            <input type="text" class="order-input" placeholder="Адрес доставки">
+            <input type="text" class="order-input" id="name-input" placeholder="Ваше имя">
+            <input type="text" class="order-input" name="address" placeholder="Адрес доставки">
             <input type="text" class="order-input" placeholder="Телефон">
             <button class="btn">Оформить заказ</button>
         </div>
@@ -253,11 +253,11 @@
         <div class="logo">
             <img src="images/logo.png" alt="logo">
         </div>
-        <div class="rights">Все права защищены, 2020</div>
+        <div class="rights">Все права защищены, <span>2020</span></div>
     </div>
 </footer>
 
-<script>
+<script src="../../mod_4_JavaScript/mod_4-11_JS_DOM/script.js">
     document.getElementById('burger').onclick = function () {
         document.getElementById('menu').classList.add('open');
     }
