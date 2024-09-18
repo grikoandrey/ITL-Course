@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div class="main-action">
-                <button class="btn">Выбрать пиццу</button>
+                <button class="btn" id="choose-pizza">Выбрать пиццу</button>
             </div>
         </div>
         <div class="main-image">
@@ -137,7 +137,7 @@
                     <p>Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn btn-add-to-card">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -149,7 +149,7 @@
                     <p>Перец, сыр, креветки, кальмары, мидии, лосось</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn btn-add-to-card">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -161,7 +161,7 @@
                     <p>Бекон, сыр, сосиски, ананас, томатная паста</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn" id="no-touch">В корзину</button>
+                    <button class="btn btn-add-to-card" id="no-touch">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -173,7 +173,7 @@
                     <p>Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn btn-add-to-card">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -185,7 +185,7 @@
                     <p>Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn btn-add-to-card">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -197,7 +197,7 @@
                     <p>Пепперони, сыр, колбаса 2 видов: обжаренная и вареная</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn btn-add-to-card">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -209,7 +209,7 @@
                     <p>Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn btn-add-to-card">В корзину</button>
                 </div>
             </div>
             <div class="product">
@@ -221,7 +221,7 @@
                     <p>Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный</p>
                 </div>
                 <div class="product-action">
-                    <button class="btn">В корзину</button>
+                    <button class="btn btn-add-to-card">В корзину</button>
                 </div>
             </div>
         </div>
@@ -237,10 +237,10 @@
                 сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
         </div>
         <div class="order-form">
-            <input type="text" class="order-input" id="name-input" placeholder="Ваше имя">
-            <input type="text" class="order-input" name="address" placeholder="Адрес доставки">
-            <input type="text" class="order-input" placeholder="Телефон">
-            <button class="btn">Оформить заказ</button>
+            <input type="text" class="order-input" id="product-input" placeholder="Ваше имя">
+            <input type="text" class="order-input" id="address-input" name="address" placeholder="Адрес доставки">
+            <input type="text" class="order-input" id="phone-input" placeholder="Телефон">
+            <button class="btn" id="createOrder">Оформить заказ</button>
         </div>
         <div class="order-image">
             <img src="images/pizzzzza.png" alt="big pizza">
@@ -257,16 +257,18 @@
     </div>
 </footer>
 
-<script src="../../mod_4_JavaScript/mod_4-11_JS_DOM/script.js">
-    document.getElementById('burger').onclick = function () {
-        document.getElementById('menu').classList.add('open');
-    }
+<!--<script src="../../mod_4_JavaScript/mod_4-11_JS_DOM/script.js">-->
+<script src="../../mod_4_JavaScript/mod_4-12_JS_Events/scripts/script_pizza.js">
 
-    document.querySelectorAll('#menu *').forEach((item) => {
-        item.onclick = () => {
-            document.getElementById('menu').classList.remove('open')
-        }
-    })
+    // document.getElementById('burger').onclick = function () {
+    //     document.getElementById('menu').classList.add('open');
+    // }
+    //
+    // document.querySelectorAll('#menu *').forEach((item) => {
+    //     item.onclick = () => {
+    //         document.getElementById('menu').classList.remove('open')
+    //     }
+    // })
 </script>
 
 </body>
