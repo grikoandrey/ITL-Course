@@ -1,19 +1,22 @@
+//-------------exercise 1--------------
 window.onload = function () {
     let inputFull = document.getElementById('fullName');
     let inputUsername = document.getElementById('userName');
     let password = document.getElementById('password');
-
+//-------------exercise 2--------------
     inputFull.onkeydown = (e) => {
         let number = parseInt(e.key);
         if (!isNaN(number)) {
             e.preventDefault();
         }
     }
+//-------------exercise 3--------------
     inputUsername.onkeydown = (e) => {
         if (e.key === ',' || e.key === '.') {
             e.preventDefault();
         }
     }
+//-------------exercise 4--------------
     let check = document.getElementById('check');
     check.onchange = () => {
         if (check.checked) {
@@ -22,7 +25,7 @@ window.onload = function () {
             console.log('Не согласен')
         }
     }
-
+//-------------exercise 5--------------
     let signUp = document.getElementById('confirm');
     let inputs = [
         {id: 'fullName', label: 'label_fullName'},
@@ -58,6 +61,7 @@ window.onload = function () {
         на вашу почту <span style="color: #D72F3F;">${document.getElementById('email').value}</span> выслана ссылка, 
         перейдите по ней, чтобы завершить регистрацию.`
     }
+//-------------exercise 6--------------
     let popupOk = document.getElementById('popupOk');
     popupOk.onclick = function () {
         document.getElementById('popup').style.display = 'none';
@@ -68,6 +72,7 @@ window.onload = function () {
         });
         switchToLogIn();
     }
+//-------------exercise 6--------------
     let haveAccount = document.getElementById('haveAccount');
     haveAccount.onclick = function () {
         switchToLogIn();
