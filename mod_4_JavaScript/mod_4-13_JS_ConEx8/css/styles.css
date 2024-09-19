@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------------------fonts---------------------------*/
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito-Black.ttf");
+    font-weight: 900;
+}
+/*---------------------------/fonts---------------------------*/
+body {
+    background-color: #FFFFFB;
+    font-size: 0;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+input {
+    all: unset;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homeWorks {
+    background: linear-gradient(to right, #FFFFFB 50%, #F8F8FA 50%);
+    padding: 27px 0 191px 0;
+}
+
+.homeWorks__title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    margin-bottom: 112px;
+}
+
+.homeWorks__title span{
+    font-size: 48px;
+    color: #D72F3F;
+}
+
+.homeWork__main {
+    display: flex;
+    justify-content: center;
+}
+
+.homeWorks__info {
+    padding: 0 85px 0 63px;
+    max-width: 600px;
+}
+
+.homeWorks__info-title {
+    font-size: 36px;
+    margin-bottom: 23px;
+}
+
+.homeWorks__info-description {
+    font-size: 22px;
+    line-height: 123%;
+    color: #636363;
+    margin-bottom: 76px;
+}
+
+.homeWorks__info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /*align-items: start;*/
+}
+
+.homeWorks__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.homeWorks__input input{
+
+}
+
+label {
+    font-size: 16px;
+    line-height: 169%;
+    color: #C6C6C4;
+}
+
+.form-input {
+    font-size: 20px;
+    line-height: 135%;
+    color: #323232;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border-bottom: 1px solid #C6C6C4;
+}
+
+.homeWorks__check {
+    margin: 10px 0 20px 0;
+}
+
+.homeWorks__check label {
+    font-size: 16px;
+    line-height: 169%;
+    color: #636363;
+    margin-left: 13px;
+}
+
+.homeWorks__check input {
+    all: revert;
+}
+
+.btn {
+    background: #DD3142;
+    padding: 22px;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    line-height: 135%;
+    color: #FFFFFF;
+    width: 210px;
+    align-self: center;
+}
+
+.homeWorks__haveAccount {
+    text-align: center;
+    margin-top: 44px;
+}
+
+.haveAccount {
+    font-size: 16px;
+    line-height: 169%;
+    color: #636363;
+}
+
+.homeWorks__image {
+    padding-top: 80px;
+}
+
+.homeWorks__popup {
+    position: absolute;
+    max-width: 1100px;
+    background: #e6dfdf;
+    text-align: center;
+    border-radius: 40px;
+    color: #636363;
+    padding: 40px;
+    /*display: flex;*/
+    display: none;
+    flex-direction: column;
+}
+
+.homeWorks__popup-text {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
