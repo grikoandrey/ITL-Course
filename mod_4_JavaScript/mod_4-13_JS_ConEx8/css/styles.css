@@ -17,7 +17,8 @@
 }
 /*---------------------------/fonts---------------------------*/
 body {
-    background-color: #FFFFFB;
+    /*background-color: #FFFFFB;*/
+    background: linear-gradient(to right, #FFFFFB 50%, #F8F8FA 50%);
     font-size: 0;
     font-family: Nunito, sans-serif;
     font-weight: 700;
@@ -39,7 +40,7 @@ input {
 }
 
 .homeWorks {
-    background: linear-gradient(to right, #FFFFFB 50%, #F8F8FA 50%);
+    /*background: linear-gradient(to right, #FFFFFB 50%, #F8F8FA 50%);*/
     padding: 27px 0 191px 0;
 }
 
