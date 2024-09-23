@@ -1,0 +1,12 @@
+body {
+    background-color: #2F54A3;
+    margin: 0 100px;
+}
+
+.ui-state-default {
+    background: orange;
+}
+
+.single-item {
+    margin: 100px auto;
+}
