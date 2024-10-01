@@ -32,6 +32,7 @@ img {
     width: 40px;
     height: 40px;
     color: transparent;
+    background-repeat: no-repeat;
 }
 
 .slick-next:before {
@@ -44,6 +45,7 @@ img {
     width: 40px;
     height: 40px;
     color: transparent;
+    background-repeat: no-repeat;
 }
 
 .slick-prev {
@@ -54,6 +56,7 @@ img {
     width: 42px;
     height: 40px;
     color: transparent;
+    background-repeat: no-repeat;
 }
 
 .slick-prev:before {
@@ -65,27 +68,96 @@ img {
     width: 42px;
     height: 40px;
     color: transparent;
+    background-repeat: no-repeat;
 }
 
-.accordion-button:after {
+@media screen and (max-width: 768px) {
+    .slick-next {
+        right: 10px;
+        background-size: 80%;
+    }
+    .slick-next:before {
+        background-size: 80%;
+    }
+    .slick-prev {
+        right: 10px;
+        background-size: 80%;
+    }
+    .slick-prev:before {
+        background-size: 80%;
+    }
+    .carousel-item__info {
+        max-width: 300px !important;
+    }
+    .fs-1 {
+        font-size: 1.5rem !important;
+    }
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .slick-next, .slick-prev {
+        background-size: 60%;
+        right: 0;
+    }
+    .slick-next:before, .slick-prev:before {
+        background-size: 60%;
+    }
+    .carousel-item__info {
+        max-width: 200px !important;
+        margin-left: 15% !important;
+    }
+    .carousel-item__info .btn {
+        font-size: 0.8rem !important;
+    }
+    .fs-1 {
+        font-size: 1.2rem !important;
+    }
+    .fs-5 {
+        font-size: 0.8rem !important;
+    }
+}
+
+/*.accordion-button:after {*/
+/*    background-image: url("../images/arrow.svg");*/
+/*}*/
+
+/*.accordion-button:not(.collapsed):after {*/
+/*    background-image: url("../images/arrow.svg");*/
+/*}*/
+
+.ui-icon {
+    background-position: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 28px;
+    top: 25px;
     background-image: url("../images/arrow.svg");
 }
 
-.accordion-button:not(.collapsed):after {
+.ui-state-active .ui-icon {
+    transform: rotate(180deg);
     background-image: url("../images/arrow.svg");
+    transition: transform 0.5s ease;
 }
 
+@media screen and (max-width: 576px) {
+    .ui-icon {
+        top: 20px;
+    }
+}
 
-/*.ui-state-active .ui-icon, .ui-button:active .ui-icon {*/
-/*    background-image: url("../images/arrow.svg");*/
-/*    position: absolute;*/
-/*}*/
-
-/*.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {*/
-/*    background-image: url("../images/arrow.svg");*/
-/*}*/
-
-/*.ui-icon, .ui-widget-content .ui-icon {*/
-/*    background-image: url("../images/arrow.svg");*/
-/*}*/
+@media screen and (max-width: 410px) {
+    #accordion {
+        font-size: 0.8rem;
+    }
+    .ui-icon {
+        top: 16px;
+        right: 10px;
+        background-size: 70%;
+    }
+}
 
