@@ -1,0 +1,13 @@
+.header {
+  padding: 30px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+.header .menu-item {
+  padding: 0 30px;
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
