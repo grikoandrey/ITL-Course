@@ -1,0 +1,338 @@
+@import "variables";
+@import "mixins";
+
+@media screen and (max-width: 585px) {
+  .header {
+    padding: 36px 18px 36px 15px;
+
+    .header__container {
+      justify-content: space-between;
+
+      .header__nav {
+        margin-left: 0;
+      }
+    }
+  }
+
+  /*---------------------------styles for main section---------------------------*/
+  .main {
+    padding: 50px 19px 43px 19px;
+
+    .main__container {
+      gap: 38px;
+
+      .main__info {
+        text-align: center;
+
+        .main__title {
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+
+        .main__text {
+          font-size: 16px;
+          max-width: none;
+          margin-bottom: 40px;
+        }
+      }
+
+      .main__image {
+        margin-left: 0;
+        top: 0;
+        padding: 0 42px;
+      }
+    }
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  /*---------------------------styles for advantages section---------------------------*/
+  .advantages {
+    padding: 100px 15px;
+
+    .advantages__content {
+      .advantages__info {
+        .advantages__title {
+          font-size: 30px;
+        }
+
+        .advantages__text {
+          font-size: 16px;
+        }
+      }
+
+      .advantages__items {
+        grid-template-columns: repeat(2, 162px);
+        gap: 16px;
+
+        .advantage__item {
+          &:nth-child(-n+2) {
+            margin-bottom: 20px;
+          }
+
+          .adv-item__title {
+            font-size: 18px;
+          }
+
+          .adv-item__text {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  /*---------------------------styles for assortment section---------------------------*/
+  .assortment {
+    padding: 100px 17px 100px 20px;
+
+    .assortment__content {
+      .assortment__title {
+        font-size: 30px;
+      }
+
+      .assortment__items {
+        grid-template-columns: repeat(1, max-content);
+      }
+
+      .assortment__item.item3 {
+        margin-bottom: 107px;
+      }
+    }
+  }
+
+  /*---------------------------styles for order section---------------------------*/
+  .order {
+    .order__container {
+      align-items: start;
+      justify-content: start;
+
+      .order__form {
+        .order__form-title {
+          font-size: 30px;
+        }
+
+        .order__form-text {
+          font-size: 16px;
+        }
+      }
+
+      .order__images {
+        .order__images-strawberry {
+          top: 107px;
+          left: -200px;
+        }
+
+        .order__images-macaroons {
+          display: none;
+        }
+      }
+      .order__plus {
+        .tavolga-mix(28px, @dark-text);
+        max-width: 500px;
+      }
+    }
+  }
+
+  /*---------------------------styles for footer---------------------------*/
+  .footer {
+    .footer__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+
+      &:after {
+        content: 'Все права защищены, 2020';
+        order: 5;
+        display: block;
+        .gilroy-mix(12px, 400, rgb(227, 172, 180));
+      }
+
+      .footer__logo {
+        margin-bottom: 0;
+        order: 1;
+      }
+
+      .footer__rights {
+        display: none;
+      }
+
+      .footer__instagram {
+        order: 3;
+
+        .footer__instagram-text {
+          order: 4;
+        }
+      }
+
+      .footer__phone {
+        order: 2;
+      }
+    }
+  }
+}
+
+/*---------------------------styles for animation---------------------------*/
+@keyframes moving {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .header {
+    .header__container {
+      .header__nav {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 70%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: rgba(227, 172, 180, 0.75);
+        z-index: 99;
+
+        .exit {
+          display: block;
+          width: 24px;
+          height: 24px;
+          fill: rgb(118, 12, 34);
+          position: absolute;
+          top: 20px;
+          left: 20px;
+        }
+
+        &.open {
+          display: flex;
+          align-items: center;
+        }
+
+        .header__menu {
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          /*margin-top: 40px;*/
+          margin: 0 auto;
+
+          .header__menu-item {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .header__burger {
+        display: block;
+      }
+    }
+  }
+
+  .main {
+    .main__container {
+      .main__image {
+        .main__round {
+          width: 160px;
+          height: 160px;
+        }
+      }
+    }
+  }
+
+  .order {
+    .order__container {
+      .order__images {
+        .order__images-strawberry {
+          top: 120px;
+          left: -85px;
+        }
+      }
+
+      .order__form {
+        .order__form-input {
+          max-width: 100%;
+        }
+
+        .order__form-btn {
+          .order__button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .present {
+    right: 10px;
+    bottom: 10px;
+    width: 71px;
+    height: 71px;
+
+    .present__round img {
+      max-width: 75px;
+    }
+
+    .present__box img {
+      max-width: 45px;
+    }
+
+    .present__text {
+      right: 170px;
+      bottom: 36px;
+    }
+  }
+
+  @keyframes rounding {
+    .round-mix(1, 2.2);
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .advantages {
+    .advantages__content {
+      .advantages__items {
+        grid-template-columns: repeat(2, 110px);
+        gap: 26px;
+      }
+
+      .advantages__image {
+        .advantages__img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .main {
+    .main__container {
+      .main__image {
+        .main__round {
+          width: 120px;
+          height: 120px;
+
+          &.first {
+            .anim-mix(1.5s, 0s);
+
+            &.second {
+              .anim-mix(1.3s, 0.2s);
+            }
+          }
+        }
+      }
+    }
+  }
+  .order {
+    .order__container {
+      .order__plus {
+        .tavolga-mix(22px, @dark-text);
+      }
+    }
+  }
+}

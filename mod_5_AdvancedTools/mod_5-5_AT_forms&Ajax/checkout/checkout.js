@@ -59,7 +59,7 @@
         //             promoElement.find('span.text-success').text(`-$${result.amount}`);
         //         } else {
         //             promoElement.removeClass('d-flex').addClass('d-none');
-        //             promoInput.css('border-color', 'red');
+        //             promoInput.src('border-color', 'red');
         //         }
         //         // console.log(result);
         //     }
@@ -90,47 +90,47 @@
     calcTotal();
 })()
 
-// let loader = $('.loader');
-//
-// $('#submit').click(function () {
-//     let name = $('#name');
-//     let lastName = $('#last_name');
-//     let type = $('#type');
-//     let hasError = false;
-//
-//
-//     $('.error-input').hide();
-//
-//     if (!name.val()) {
-//         name.next().show();
-//         // return;
-//         hasError = true;
-//     }
-//     if (!lastName.val()) {
-//         lastName.next().show();
-//         // return;
-//         hasError = true;
-//     }
-//     if (!type.val()) {
-//         type.next().show();
-//         // return;
-//         hasError = true;
-//     }
-//     if (!hasError) {
-//         loader.css('display', 'flex');
-//         $.ajax({
-//             method: "POST",
-//             url: "http://testologia.ru/checkout",
-//             data: { name: name.val(), last_name: lastName.val(), type: type.val() }
-//         })
-//             .done(function(msg) {
-//                 loader.hide();
-//                 if (msg.success) {
-//                     alert('Заказ создан');
-//                 } else {
-//                     alert('Заказ не создан');
-//                 }
-//                 // console.log(msg);
-//             });
-//     }
-// })
+let loader = $('.loader');
+
+$('#submit').click(function () {
+    let name = $('#name');
+    let lastName = $('#last_name');
+    let type = $('#type');
+    let hasError = false;
+
+
+    $('.error-input').hide();
+
+    if (!name.val()) {
+        name.next().show();
+        // return;
+        hasError = true;
+    }
+    if (!lastName.val()) {
+        lastName.next().show();
+        // return;
+        hasError = true;
+    }
+    if (!type.val()) {
+        type.next().show();
+        // return;
+        hasError = true;
+    }
+    if (!hasError) {
+        loader.src('display', 'flex');
+        $.ajax({
+            method: "POST",
+            url: "http://testologia.ru/checkout",
+            data: { name: name.val(), last_name: lastName.val(), type: type.val() }
+        })
+            .done(function(msg) {
+                loader.hide();
+                if (msg.success) {
+                    alert('Заказ создан');
+                } else {
+                    alert('Заказ не создан');
+                }
+                // console.log(msg);
+            });
+    }
+})

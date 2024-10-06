@@ -1,0 +1,24 @@
+{
+  "name": "mod_5-8_at_conex10",
+  "version": "1.0.0",
+  "description": "ConEx10",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Griko",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-cssmin": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^5.0.0",
+    "path": "^0.12.7"
+  }
+}

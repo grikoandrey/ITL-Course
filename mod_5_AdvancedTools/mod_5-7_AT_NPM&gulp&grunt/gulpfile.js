@@ -15,7 +15,7 @@ exports.sass = function () {
     // cb();
     return gulp.src('./src/styles/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(concatCss("style.css"))
+        .pipe(concatCss("style.src"))
         .pipe(cleanCSS())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist'));
