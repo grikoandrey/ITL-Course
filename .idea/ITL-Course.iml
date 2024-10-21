@@ -5,6 +5,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/mod_8_GIT/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/mod_8_GIT_clone/.idea" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
