@@ -3,11 +3,12 @@ $('h1').html('Самая крутая пицца ждет <span>только в 
 // document.getElementById('products-title').style.color = '#000000';
 $('#products-title').css('color', '#000000');
 
-$('.btn:not(#no-touch)').css({
-    backgroundColor: 'transparent',
-    border: '1px solid rgb(255, 175, 24)',
-    color: 'rgb(255, 175, 24)',
-})
+//добавление и изменение стилей в элемент
+// $('.btn:not(#no-touch)').css({
+//     backgroundColor: 'transparent',
+//     border: '1px solid rgb(255, 175, 24)',
+//     color: 'rgb(255, 175, 24)',
+// })
 
 // let buttonElements = document.querySelectorAll('.btn');
 //
@@ -33,24 +34,27 @@ productInput.attr('placeholder', 'Your name');
 
 $('.rights span').text((new Date()).getFullYear());
 
-let products = $('.product');
-for (let i = 0; i < products.length; i++) {
-    if (i % 2 === 1) {
-        // products[i].querySelector('.product-info h6').innerText += '*';
-        let element = products.eq(i).find('h6');
-        element.text(element.text() + '*');
-    }
-}
+//поиск элемента в массиве и добавление к нему символа *
+// let products = $('.product');
+// for (let i = 0; i < products.length; i++) {
+//     if (i % 2 === 1) {
+//         // products[i].querySelector('.product-info h6').innerText += '*';
+//         let element = products.eq(i).find('h6');
+//         element.text(element.text() + '*');
+//     }
+// }
 
+//плавное перемещение на заданный раздел при клике на кнопку
 $('#choose-pizza').click(function (){
     $('.products')[0].scrollIntoView({behavior: "smooth" });
 });
-
+//заполнение поля формы определенным названием и перемещение к блоку
 $('.btn-add-to-card').click((e) => {
     productInput.val($(e.target).parents('.product').find('h6').text());
     $('.order')[0].scrollIntoView({behavior: "smooth" });
 })
 
+// проверка заполнения полей формы (выводится уведомление) и отправляется запрос на сайт
 $('#createOrder').click(function (){
     let addressInput = $('#address-input');
     let phoneInput = $('#phone-input');
