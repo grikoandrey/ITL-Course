@@ -66,8 +66,16 @@ $('#createOrder').click(function (){
         alert('Введите телефон!');
         return;
     }
-    alert('Спасибо за заказ!');
-    productInput.val('');
-    addressInput.val('');
-    phoneInput.val('');
+    $.ajax( {
+        method: 'GET',
+        url: `https://testologia.ru/test-cookie?name=${productInput.value}`,
+        xhrFields: {
+            withCredentials: true,
+        }
+    })
+
+    // alert('Спасибо за заказ!');
+    // productInput.val('');
+    // addressInput.val('');
+    // phoneInput.val('');
 });
