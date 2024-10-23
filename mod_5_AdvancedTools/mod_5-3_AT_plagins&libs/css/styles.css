@@ -313,7 +313,7 @@ body {
     min-height: 600px;
     background: transparent;
 }
-
+/*стили для модального окна cookie в рамках модуля 9-1*/
 .cookie {
     position: fixed;
     bottom: 30px;

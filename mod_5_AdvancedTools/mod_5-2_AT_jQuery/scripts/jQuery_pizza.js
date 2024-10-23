@@ -45,41 +45,95 @@ $('.rights span').text((new Date()).getFullYear());
 // }
 
 //плавное перемещение на заданный раздел при клике на кнопку
-$('#choose-pizza').click(function (){
-    $('.products')[0].scrollIntoView({behavior: "smooth" });
+$('#choose-pizza').click(function () {
+    $('.products')[0].scrollIntoView({behavior: "smooth"});
 });
 //заполнение поля формы определенным названием и перемещение к блоку
 $('.btn-add-to-card').click((e) => {
     productInput.val($(e.target).parents('.product').find('h6').text());
-    $('.order')[0].scrollIntoView({behavior: "smooth" });
+    $('.order')[0].scrollIntoView({behavior: "smooth"});
 })
 
-// проверка заполнения полей формы (выводится уведомление) и отправляется запрос на сайт
-$('#createOrder').click(function (){
+//как бы удалили данную функцию в рамках урока 9-2, чтобы написать заново с ошибками
+// // проверка заполнения полей формы (выводится уведомление) и отправляется запрос на сайт
+// $('#createOrder').click(function (){
+//     let addressInput = $('#address-input');
+//     let phoneInput = $('#phone-input');
+//     if (!productInput.val()) {
+//         alert('Выберите пиццу!');
+//         return;
+//     }
+//     if (!addressInput.val()) {
+//         alert('Введите адрес!');
+//         return;
+//     }
+//     if (!phoneInput.val()) {
+//         alert('Введите телефон!');
+//         return;
+//     }
+//     $.ajax( {
+//         method: 'GET',
+//         url: `https://testologia.ru/test-cookie?name=${productInput.value}`,
+//         xhrFields: {
+//             withCredentials: true,
+//         }
+//     })
+//
+//     // alert('Спасибо за заказ!');
+//     // productInput.val('');
+//     // addressInput.val('');
+//     // phoneInput.val('');
+// });
+
+$('#createOrder').click(function () {
+    // debugger;
+    // console.log(1);
+    // console.warn(1);
+    // console.error(1);
+    // console.trace();
+    // console.debug('something');
+
+    let hasError = false;
     let addressInput = $('#address-input');
     let phoneInput = $('#phone-input');
-    if (!productInput.val()) {
-        alert('Выберите пиццу!');
-        return;
-    }
-    if (!addressInput.val()) {
-        alert('Введите адрес!');
-        return;
-    }
-    if (!phoneInput.val()) {
-        alert('Введите телефон!');
-        return;
-    }
-    $.ajax( {
-        method: 'GET',
-        url: `https://testologia.ru/test-cookie?name=${productInput.value}`,
-        xhrFields: {
-            withCredentials: true,
-        }
-    })
 
-    // alert('Спасибо за заказ!');
-    // productInput.val('');
-    // addressInput.val('');
-    // phoneInput.val('');
-});
+    $('.order-input').css('border-color', 'rgb(185, 145, 80)');
+
+    if (!productInput.val()) {
+        productInput.css('border-color', 'red');
+        hasError = true;
+    }
+
+    if (!addressInput.val()) {
+        addressInput.css('border-color', 'red');
+        hasError = true;
+    }
+
+    if (!phoneInput.val()) {
+        phoneInput.css('border-color', 'red');
+        hasError = true;
+    }
+
+    if (!hasError) {
+        // console.time('ajax');
+        $.ajax({
+            method: 'POST',
+            url: `https://testologia.ru/checkout`,
+            data: {
+                product: productInput.val(),
+                name: addressInput.val(),
+                phone: phoneInput.val(),
+            }
+        })
+            .done(function (msg) {
+                // console.timeEnd('ajax');
+                if (msg.success) {
+                    alert('Спасибо за заказ!');
+                } else {
+                    alert('Ошибка, попробуйте позднее!');
+                }
+            })
+    }
+
+
+})
