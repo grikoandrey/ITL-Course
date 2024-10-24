@@ -98,18 +98,19 @@ $('#createOrder').click(function () {
     let phoneInput = $('#phone-input');
 
     $('.order-input').css('border-color', 'rgb(185, 145, 80)');
-
-    if (!productInput.val()) {
+// в рамках урока 9-3 Регулярные выражения добавили валидацию через выражения
+    if (!productInput.val().match(/^[А-Я][а-я]+\s*$/)) {
         productInput.css('border-color', 'red');
         hasError = true;
     }
 
-    if (!addressInput.val()) {
+    if (!addressInput.val().match(/^[а-я0-9,\.\s]+$/i)) {
         addressInput.css('border-color', 'red');
         hasError = true;
     }
 
-    if (!phoneInput.val()) {
+    if (!phoneInput.val().match(/^[0-9\(\)\-\s]+$/)) {
+        // if (!phoneInput.val().match(/^\+7\s\(9\d{2}\)\s\d{3}-\d{2}-\d{2}$/)) {
         phoneInput.css('border-color', 'red');
         hasError = true;
     }
@@ -134,6 +135,11 @@ $('#createOrder').click(function () {
                 }
             })
     }
-
-
 })
+
+// дополнительное упражнение в рамках модуля 9-3 для замены слова с помощью регулярных выражений
+let products = $('.product');
+for (let i = 0; i < products.length; i++) {
+    let productTitle = products.eq(i).find('h6');
+    productTitle.text(productTitle.text().replace(/(Курин[а-я]+)(.+)/gi, '$2 из индейки'));
+}

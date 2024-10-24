@@ -241,12 +241,13 @@
                 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим
                 сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
         </div>
-        <div class="order-form">
+        <form class="order-form">
             <input type="text" class="order-input" id="product-input" placeholder="Ваше имя">
             <input type="text" class="order-input" id="address-input" name="address" placeholder="Адрес доставки">
             <input type="text" class="order-input" id="phone-input" placeholder="Телефон">
+<!--            <input type="text" class="order-input" id="phone-input" placeholder="Телефон" pattern="^[0-9\(\)\-\s]+$" required>-->
             <button class="btn" id="createOrder">Оформить заказ</button>
-        </div>
+        </form>
         <div class="order-image wow animate__backInRight">
             <img src="images/pizzzzza.png" alt="big pizza">
         </div>
