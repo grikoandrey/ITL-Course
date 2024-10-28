@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>mod_9-14</title>
+</head>
+<body>
+
+<main>
+    <section class="homeWorks">
+        <div class="container">
+            <div class="homeWorks__title">
+                home<span>W</span>orks
+            </div>
+            <div class="homeWork__main">
+                <div class="homeWorks__info">
+                    <div id="homeWorks-title" class="homeWorks__info-title">Get your free account</div>
+                    <div class="homeWorks__info-description">Try homeWorks BUSINESS free for 15 days. Downgrade to Basic
+                        (Free Forever) anytime.
+                    </div>
+                    <form class="homeWorks__info-form">
+                        <div id="inputFullName" class="homeWorks__input">
+                            <label id="label_fullName" for="fullName">Full Name</label>
+                            <input id="fullName" type="text" class="form-input fullName" placeholder="Antony Swarowski">
+                            <div class="error fullName">только буквы и пробел</div>
+                        </div>
+                        <div id="inputUserName" class="homeWorks__input">
+                            <label id="label_userName" for="userName">Your username</label>
+                            <input id="userName" type="text" class="form-input userName">
+                            <div class="error userName">только буквы, цифры, подчеркивание и тире</div>
+                        </div>
+                        <div id="inputEmail" class="homeWorks__input">
+                            <label id="label_email" for="email">E-mail</label>
+                            <input id="email" type="email" class="form-input email">
+                            <div class="error email">введите в правильном формате</div>
+                        </div>
+                        <div id="inputPwd" class="homeWorks__input">
+                            <label id="label_password" for="password">Password</label>
+                            <input id="password" type="password" class="form-input password">
+                            <div class="error password">не менее 8 символов, заглавная буква, цифра и спецсимвол</div>
+                        </div>
+                        <div id="inputRepeatPass" class="homeWorks__input">
+                            <label id="label_repeatPass" for="repeatPass">Repeat Password</label>
+                            <input id="repeatPass" type="password" class="form-input repeatPass">
+                            <div class="error repeatPass">пароли должны совпадать</div>
+                        </div>
+                        <div id="inputCheck" class="homeWorks__check">
+                            <input id="check" type="checkbox" checked>
+                            <label for="check">Agree to our Terms of Service and Privacy Statement</label>
+                            <div class="error check">подтвердите согласие</div>
+                        </div>
+                        <button id="confirm" class="btn">Sign Up</button>
+                    </form>
+                    <div class="homeWorks__haveAccount">
+                        <a href="#" id="haveAccount" class="haveAccount">Already have an account?</a>
+                    </div>
+                </div>
+                <div class="homeWorks__image">
+                    <img src="images/image.png" alt="flying_rocket">
+                </div>
+                <div id="popup" class="homeWorks__popup">
+                    <div id="popupText" class="homeWorks__popup-text">На вашу почту выслана ссылка, перейдите по ней, чтобы завершить
+                        регистрацию
+                    </div>
+                    <div id="popupOk" class="homeWorks__popup-btn btn">OK</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
