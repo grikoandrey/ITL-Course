@@ -139,7 +139,7 @@ function processData({persons, cities, specializations}) {
             return (!best || goSkill.level > best.skills.find(s => s.name.toLowerCase() === 'go').level) ? person : best;
         }, null);
 
-    console.log("Команда для проекта:");
+    console.log("--------------------------Команда для проекта:");
     console.log("Лучший дизайнер с навыком Figma:", bestFigmaDesigner ? getInfo.call(bestFigmaDesigner, cities) : "Не найден");
     console.log("Лучший frontend разработчик с навыком Angular:", bestAngularFrontend ? getInfo.call(bestAngularFrontend, cities) : "Не найден");
     console.log("Лучший backend разработчик с навыком Go:", bestGoBackend ? getInfo.call(bestGoBackend, cities) : "Не найден");
