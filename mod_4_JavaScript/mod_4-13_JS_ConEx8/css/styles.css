@@ -18,7 +18,7 @@
 /*---------------------------/fonts---------------------------*/
 body {
     /*background-color: #FFFFFB;*/
-    background: linear-gradient(to right, #FFFFFB 50%, #F8F8FA 50%);
+    background: linear-gradient(to right, #f2f2d1 50%, #7d7de6 50%);
     font-size: 0;
     font-family: Nunito, sans-serif;
     font-weight: 700;
@@ -47,7 +47,7 @@ input {
 .homeWorks__title {
     text-align: center;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 49px;
     letter-spacing: -0.015em;
     text-transform: uppercase;
@@ -56,7 +56,7 @@ input {
 
 .homeWorks__title span{
     font-size: 48px;
-    color: #D72F3F;
+    color: #74030d;
 }
 
 .homeWork__main {
