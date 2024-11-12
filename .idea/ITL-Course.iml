@@ -14,5 +14,6 @@
     <orderEntry type="library" name="@types/node" level="application" />
     <orderEntry type="library" name="@types/npm" level="application" />
     <orderEntry type="library" name="@types/nodemon" level="application" />
+    <orderEntry type="library" name="@types/canvasjs" level="application" />
   </component>
 </module>
