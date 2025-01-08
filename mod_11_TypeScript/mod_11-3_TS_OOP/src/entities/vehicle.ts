@@ -1,4 +1,4 @@
-import {ConditionType} from "../types/condition.type.js";
+import {ConditionType} from "../types/condition.type";
 import {VehicleInterface} from "../interface/vehicle.interface.js";
 
 export abstract class Vehicle {

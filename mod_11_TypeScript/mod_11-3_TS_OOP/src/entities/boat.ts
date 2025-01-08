@@ -1,4 +1,4 @@
-import {Vehicle} from "./vehicle.js";
+import {Vehicle} from "./vehicle";
 import {VehicleInterface} from "../interface/vehicle.interface";
 import {ConditionType} from "../types/condition.type";
 

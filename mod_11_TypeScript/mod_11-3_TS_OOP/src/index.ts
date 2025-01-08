@@ -1,6 +1,6 @@
-import {ConditionType} from "./types/condition.type.js";
-import {Car} from "./entities/car.js";
-import {Boat} from "./entities/boat.js";
+import {ConditionType} from "./types/condition.type";
+import {Car} from "./entities/car";
+import {Boat} from "./entities/boat";
 
 
 
