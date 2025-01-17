@@ -1,0 +1,29 @@
+<p>
+  app-second-comp
+</p>
+
+<p>
+  app-second-comp: {{title + ' my'}}
+</p>
+
+<a [href]="link">Google</a>
+
+<table>
+  <tr>
+    <td [attr.colspan]="colspan">1</td>
+    <td [class.test]="isTest === 'test'">2</td>
+    <td [class]="'test' + (isTest === 'test2' ? ' test1 test2' : ' test2')">2</td>
+    <td [class]="{test: true, test1: isTest === 'test1', test3: isTest === 'test2'}">3</td>
+    <td [class]="['test', 'test1', 'test2']">4</td>
+    <td [style.background-color]="color === 1 ? 'orange' : 'blue'">5</td>
+    <td [style.backgroundColor]="color === 1 ? 'orange' : 'blue'">6</td>
+    <td [style]="'background: black; color: white'">7</td>
+    <td [style]="{color: 'red', background: 'black'}">8</td>
+  </tr>
+</table>
+
+<button (click)="onClick()">Push my</button>
+
+<input *ngIf="isTest === 'test2'" type="text" [(ngModel)]="value">
+
+<div *ngFor="let item of items; let i = index;">{{i+1}} Element # {{item}}</div>
