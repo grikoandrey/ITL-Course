@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("./assets/fonts/MullerRegular.otf");
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("./assets/fonts/MullerBold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: MullerExtrabold;
+  src: url("./assets/fonts/MullerExtraBold.otf");
+}
+
+body {
+  font-size: 0;
+  font-family: Muller, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1229px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
