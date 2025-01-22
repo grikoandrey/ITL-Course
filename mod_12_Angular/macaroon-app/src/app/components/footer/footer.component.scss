@@ -1,0 +1,83 @@
+/*---------------------------styles for footer---------------------------*/
+.footer {
+  padding: 73px 20px 62px 19px;
+  background-color: rgb(192, 112, 124);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+}
+
+.logo__text {
+  font-family: Tavolga, sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.footer__logo {
+  margin-bottom: 19px;
+}
+
+.footer__rights {
+  font-size: 12px;
+  font-family: Gilroy, sans-serif;
+  color: rgb(227, 172, 180);
+  margin-bottom: 19px;
+}
+
+.footer__instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__instagram-text {
+  font-size: 16px;
+  font-family: Gilroy, sans-serif;
+  font-weight: bold;
+}
+
+.phone__text {
+  font-size: 16px;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 585px){
+  /*---------------------------styles for footer---------------------------*/
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .footer__logo {
+    margin-bottom: 0;
+    order: 1;
+  }
+  .footer__phone {
+    order: 2;
+  }
+  .footer__instagram {
+    order: 3;
+  }
+  .footer__instagram-text {
+    order: 4;
+  }
+  .footer__rights {
+    display: none;
+  }
+  .footer__container::after {
+    content: 'Все права защищены, 2025';
+    order: 5;
+    display: block;
+    font-size: 12px;
+    font-family: Gilroy, sans-serif;
+    color: rgb(227, 172, 180);
+  }
+}

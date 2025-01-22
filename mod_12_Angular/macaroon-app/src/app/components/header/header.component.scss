@@ -1,0 +1,124 @@
+/*---------------------------styles for header---------------------------*/
+.header {
+  background-color: transparent;
+  padding: 36px 18px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__text {
+  font-family: Tavolga, sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.header__nav {
+  margin-right: 97px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__menu-item {
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(119, 11, 29);
+  transition: all .1s ease-in-out;
+}
+
+.header__menu-item:hover {
+  border-bottom: 2px solid rgb(130, 19, 40);
+}
+
+.phone__text {
+  font-size: 16px;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.header__burger, .exit {
+  display: none;
+}
+
+@media screen and (max-width: 1148px) {
+  .header__nav {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    justify-content: start;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__nav {
+    margin-left: 103px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .header {
+    padding: 36px 18px 36px 15px;
+  }
+  .header__container {
+    justify-content: space-between;
+  }
+  .header__nav {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .header__nav {
+    display: none;
+  }
+  .header__nav {
+    position: fixed;
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(227, 172, 180, 0.75);
+    z-index: 99;
+  }
+  .header__menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /*margin-top: 40px;*/
+    margin: 0 auto;
+  }
+  .header__menu-item {
+    font-size: 24px;
+  }
+  .header__nav.open {
+    display: flex;
+    align-items: center;
+  }
+  .header__nav .exit {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: rgb(118, 12, 34);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .header__burger {
+    display: block;
+  }
+}
