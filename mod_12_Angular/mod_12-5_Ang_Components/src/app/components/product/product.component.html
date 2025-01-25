@@ -1,0 +1,18 @@
+<div class="product">
+  <a class="product-image" href="assets/images/pizza1.png">
+    <img src="assets/images/{{product.image}}">
+  </a>
+  <div class="product-info">
+    <custom-title [title]="product.title" #customTitle>
+      <p first>test message</p>
+      <p second #second>wow message</p>
+    </custom-title>
+    <p>{{ product.description }}</p>
+  </div>
+  <div class="product-action" #elem>
+<!--    <button class="btn btn-add-to-card" (click)="addProductToCard(customTitle.toUpper())">В корзину</button>-->
+    <button class="btn btn-add-to-card" (click)="addProductToCard()">В корзину</button>
+  </div>
+</div>
+
+<!--(click)="addToCard(product, orderBlock)"-->
