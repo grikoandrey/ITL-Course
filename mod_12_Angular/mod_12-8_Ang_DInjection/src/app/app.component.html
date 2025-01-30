@@ -1,0 +1,98 @@
+<section class="main">
+  <div class="container">
+    <div class="main-info wow animate__backInLeft">
+      <h1 class="double-title">Самая вкусная пицца в мире
+        <span>только в Pizza Cheff</span>
+      </h1>
+      <div class="advantages">
+        <div class="advantage">
+          <div class="advantage-img">
+            <img src="assets/images/hop.png" alt="photo1">
+          </div>
+          <div class="advantage-text">
+            <h5>Лучшее тесто</h5>
+            <p>Мы создаем тесто только из
+              отборной итальянской муки
+              наивысшего качества</p>
+          </div>
+        </div>
+        <div class="advantage">
+          <div class="advantage-img">
+            <img src="assets/images/kitchen-pack.png" alt="photo2">
+          </div>
+          <div class="advantage-text">
+            <h5>Лучшие повара</h5>
+            <p>Пиццы готовят самые
+              профессиональные
+              итальянские повара</p>
+          </div>
+        </div>
+        <div class="advantage">
+          <div class="advantage-img">
+            <img src="assets/images/seo-and-web.png" alt="photo3">
+          </div>
+          <div class="advantage-text">
+            <h5>Гарантия качества</h5>
+            <p>Наша пиццерия получила
+              множество наград и
+              признаний по всему миру</p>
+          </div>
+        </div>
+        <div class="advantage">
+          <div class="advantage-img">
+            <img src="assets/images/holidays.png" alt="photo4">
+          </div>
+          <div class="advantage-text">
+            <h5>Отборные рецепты</h5>
+            <p>Мы используем рецепты
+              от мировых лидеров
+              в изготовлении пиццы</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-action">
+        <a href="#test-popup" class="btn hvr-sweep-to-right open-popup-link" (click)="scrollTo(productsBlock)">Выбрать
+          пиццу</a>
+      </div>
+    </div>
+    <div class="main-image wow animate__backInRight">
+      <img src="assets/images/pizza_big.png" alt="Big pizza">
+    </div>
+  </div>
+</section>
+
+<section class="products" #productsBlock>
+  <div class="container">
+    <h2 class="products-title" id="products-title">Выберите свою любимую пиццу {{ lateData | async }}</h2>
+    <div class="products-items">
+      <product *ngFor="let product of products" [product]="product"
+               (addToCartEvent)="addToCard($event, orderBlock)"></product>
+    </div>
+  </div>
+</section>
+<div style="font-size: 14px;">{{ cartServices.count }}</div>
+<section class="order" #orderBlock>
+  <div class="container">
+    <div class="order-text">
+      <h2 class="double-title"><span>Хватит думать!</span> Доставим заказ за 30 минут!</h2>
+      <p>Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1
+        минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим
+        сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
+    </div>
+    <form class="order-form">
+      <input type="text" class="order-input" coolInput name="product"
+             [coolInputDefaultBgColor]="'gray'"
+             [coolInputFocusBgColor]="'red'"
+             placeholder="Выберите пиццу"
+             [(ngModel)]="formValues.productName">
+      <input type="text" class="order-input" name="address" placeholder="Адрес доставки"
+             [(ngModel)]="formValues.address">
+      <input type="text" class="order-input" coolInput name="phone" placeholder="Телефон"
+             [(ngModel)]="formValues.phone">
+      <button class="btn" type="button" (click)="createOrder()">Оформить заказ</button>
+    </form>
+    <div class="order-image wow animate__backInRight">
+      <img src="assets/images/pizzzzza.png" alt="big pizza">
+    </div>
+  </div>
+</section>
