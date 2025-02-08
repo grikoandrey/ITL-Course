@@ -1,0 +1,16 @@
+<div class="assortment__item item{{i+1}}">
+  <div class="assortment__item-img">
+    <img src="assets/images/assort{{product.img}}.png" alt="sweet raspberry macaroon" class="ass-item__image">
+  </div>
+  <h3 class="assortment__item-title">{{ product.title }}</h3>
+  <div class="assortment__item-order">
+    <div class="assortment__item-info">
+      <span class="assortment__item-quantity">{{ product.quantity }}</span>
+      <span class="assortment__item-price">{{ product.price | currency:'руб.':'symbol':'1.2-2'}}</span>
+    </div>
+    <div class="assortment__item-btn">
+      <button class="button assortment__btn" buttons
+              (click)="addProductToCart()">Заказать</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+<main class="page">
+  <section class="main">
+    <div class="container main__container">
+      <div class="main__info">
+        <h1 class="main__title">Мягкие французские пироженки Macaroons</h1>
+        <p class="main__text">Побалуйте себя и своих близких самыми вкусными и ароматными домашними пироженками
+          Macaroon!
+        </p>
+        <div class="main__action">
+          <button class="button button__main" buttons (click)="scrollTo(advantagesBlock)">Выбрать макарун</button>
+        </div>
+      </div>
+      <div class="main__image">
+        <div class="main__round first"></div>
+        <div class="main__round second"></div>
+        <img src="assets/images/main-img.png" alt="box of macaroons" class="main__img">
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages advantages__container" #advantagesBlock id="advantagesBlock">
+    <div class="container">
+      <div class="advantages__content">
+        <div class="advantages__info">
+          <h2 class="advantages__title">Мы печём для вас вкуснейшие макаруны уже более 10 лет</h2>
+          <p class="advantages__text">Все пироженки мы готовим только из натуральных и качественных продуктов,
+            без консервантов, ароматизаторов, красителей. Используем в приготовлении сливочное масло 82,5%, без
+            дрожжей, маргарина, разрыхлителей и улучшителей муки.
+          </p>
+        </div>
+        <div class="advantages__image">
+          <img src="assets/images/advantages-img.png" alt="delicious macaroon" class="advantages__img">
+        </div>
+        <div class="advantages__items">
+          <advantages *ngFor="let adv of advantages" [adv]="adv"></advantages>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="assortment" id="assortmentBlock">
+    <div class="container">
+      <div class="assortment__content">
+        <h2 class="assortment__title">Выберите свой макарун</h2>
+        <div class="assortment__items">
+          <product *ngFor="let product of products; let i = index" [product]="product" [i]="i"
+                   (addToCartEvent)="addToCard($event, orderBlock)">
+          </product>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" #orderBlock id="orderBlock">
+    <div class="container order__container">
+      <div class="order__images">
+        <img src="assets/images/клубника-big.png" alt="juicy strawberry" class="order__images-strawberry">
+        <img src="assets/images/order-img.png" alt="macaroons" class="order__images-macaroons">
+      </div>
+      <form class="order__form">
+        <h2 class="order__form-title">Закажите макарун!</h2>
+        <p class="order__form-text">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
+          пекаря!
+        </p>
+        <div class="order__form-info">Ваш выбор</div>
+        <input class="order__form-input order__form-choice" [(ngModel)]="formValues.productName" name="product"
+               placeholder="Напишите, что хотите заказать...">
+        <div class="order__form-info">Заполните данные для заказа</div>
+        <input class="order__form-input order__form-name" [(ngModel)]="formValues.userName" name="user"
+               placeholder="Ваше имя">
+        <input class="order__form-input order__form-phone" [(ngModel)]="formValues.userPhone" name="phone"
+               placeholder="+375 (__) ___ - __ - __">
+        <div class="order__form-btn">
+          <button class="button order__button" (click)="createOrder()">Оформить заказ</button>
+        </div>
+        <div class="order__image">
+          <img src="assets/images/клубника-small.png" alt="juicy strawberry" class="order__image-strawberry">
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!--<div class="present" *ngIf="present">-->
+<div class="present">
+  <div class="present__round">
+    <img src="assets/images/round.png" alt="red round">
+  </div>
+  <div class="present__box">
+    <img src="assets/images/cart.png" alt="white box with present">
+  </div>
+  <div class="present__text">
+    <a class="present__link" href="/" (click)="getPresent()">
+      <div class="present__field">
+        <p class="present__message">{{ cartService.sum | currency:'руб.':'symbol':'1.2-2' }}</p>
+        <!--        <p class="present__message">и получите подарок!</p>-->
+      </div>
+    </a>
+  </div>
+  <div class="present__info">{{ cartService.count }}</div>
+</div>
