@@ -1,0 +1,64 @@
+<main class="form-signin w-100 m-auto">
+  <form [formGroup]="signInForm">
+    <img class="mb-4" src="../../../assets/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <!--      [formControl]="email">-->
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+             formControlName="email">
+<!--             [class]="{'border-danger': email?.invalid && (email?.dirty || email?.touched)}"-->
+
+      <label for="floatingInput">
+<!--             [class]="{'text-danger': email?.invalid && (email?.dirty || signInForm.get('email')?.touched)}"-->
+      Email address</label>
+
+      <div
+        *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+        <div class="text-danger" *ngIf="email?.errors?.['required']">
+          Email is required
+        </div>
+        <div class="text-danger" *ngIf="email?.errors?.['email']">
+          Email is incorrect
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-floating">
+      <!--      [formControl]="password">-->
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+             [class]="{'border-danger': password?.invalid && (password?.dirty || password?.touched)}"
+             formControlName="password">
+      <label for="floatingPassword"
+             [class]="{'text-danger': password?.invalid && (password?.dirty || password?.touched)}">Password</label>
+
+      <div *ngIf="password?.invalid && (password?.dirty || password?.touched)">
+        <div class="text-danger" *ngIf="password?.errors?.['required']">
+          Password is required
+        </div>
+        <div class="text-danger" *ngIf="password?.errors?.['pattern']">
+          Password is not strong
+        </div>
+      </div>
+    </div>
+
+    <div class="form-check text-start my-3">
+      <!--      [formControl]="rememberMe">-->
+      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault"
+             formControlName="rememberMe">
+      <label class="form-check-label" for="flexCheckDefault">
+        Remember me
+      </label>
+    </div>
+
+    <div *ngIf="signInForm.invalid && (signInForm.touched || signInForm.dirty) && signInForm.errors?.['emailAsPassword']" class="text-danger">
+      The password should differ from the mail
+    </div>
+
+    <button class="btn btn-primary w-100 py-2" type="submit"
+            (click)="signIn()">Sign in
+    </button>
+    <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2025</p>
+  </form>
+</main>
