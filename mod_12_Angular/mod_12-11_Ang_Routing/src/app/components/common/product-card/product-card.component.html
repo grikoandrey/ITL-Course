@@ -1,0 +1,31 @@
+<div class="product">
+
+  <div *ngIf="product.image; then productImageBlock else defaultImageBlock"></div>
+
+  <ng-template #productImageBlock>
+    <div class="product-image">
+      <!--    <div class="product-card-image" *ngIf="product-card.image; else defaultImageBlock">-->
+      <img src="assets/images/{{product.image}}">
+    </div>
+  </ng-template>
+
+  <!--  <div class="product-card-image" *ngIf="!product-card.image">-->
+  <ng-template #defaultImageBlock>
+    <div class="product-image">
+      <img src="assets/images/pizzzzza.png">
+    </div>
+  </ng-template>
+
+  <div class="product-info">
+    <custom-title [title]="product.title | uppercase"></custom-title>
+    <p>{{ product.description | wordUpper: ['том', 'сыр'] }}</p>
+  </div>
+  <div class="product-action" #elem>
+    <!--    <button class="btn btn-add-to-card" (click)="addProductToCard()">В корзину</button>-->
+    <a class="btn btn-add-to-card" [routerLink]="'/order'" [queryParams]="{product: product.title}">В корзину</a>
+    <a class="btn btn-white" [routerLink]="['/products', product.id]"
+       [queryParams]="{product: product.title}">Подробнее</a>
+  </div>
+  <!--  <div style="font-size: 14px;">{{ cartProductService.getCommonCount() }}</div>-->
+  <!--  <div style="font-size: 14px;">{{ product-card.datetime | date:'fullDate' | uppercase }}</div>-->
+</div>
