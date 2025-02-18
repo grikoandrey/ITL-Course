@@ -21,7 +21,7 @@
 //
 //     function calcTotal () {
 //         let total = 0;
-//         $('.list-group .product-price').each(function() {
+//         $('.list-group .product-card-price').each(function() {
 //             let price = parseFloat($(this).text().replace('$', ''));
 //             total += price;
 //             // console.log(price)

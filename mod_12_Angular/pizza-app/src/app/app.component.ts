@@ -68,7 +68,7 @@ export class AppComponent {
 
   public createOrder() {
     if (!this.formValues.productName) {
-      alert('Enter name product');
+      alert('Enter name product-card');
       return;
     }
 

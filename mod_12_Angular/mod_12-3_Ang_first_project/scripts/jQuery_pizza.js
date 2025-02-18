@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let productInputName = $('#product-input');
+    let productInputName = $('#product-card-input');
     productInputName.attr('placeholder', 'Выберите пиццу');
 
     $('.rights span').text((new Date()).getFullYear());
@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
 //заполнение поля формы определенным названием и перемещение к блоку
     $('.btn-add-to-card').click((e) => {
-        productInputName.val($(e.target).parents('.product').find('h6').text());
+        productInputName.val($(e.target).parents('.product-card').find('h6').text());
         $('.order')[0].scrollIntoView({behavior: "smooth"});
     })
 

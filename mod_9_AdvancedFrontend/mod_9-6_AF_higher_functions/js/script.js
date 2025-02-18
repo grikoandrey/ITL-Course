@@ -111,73 +111,73 @@ function processData() {
     // console.log(brands);
     // console.log(types);
     // console.log(products);
-    // let result = products.some((product) => {
-    //     return product.price > 20000;
+    // let result = products.some((product-card) => {
+    //     return product-card.price > 20000;
     // })
-    // let result = products.every((product) => {
-    //     return product.title.includes('Пылесос');
+    // let result = products.every((product-card) => {
+    //     return product-card.title.includes('Пылесос');
     // })
-    // let result = products.find((product) => {
-    //     return product.title.indexOf('BCS611') > -1;
+    // let result = products.find((product-card) => {
+    //     return product-card.title.indexOf('BCS611') > -1;
     // })
-    // let result = products.findIndex((product) => {
-    //     return product.title.indexOf('BCS611') > -1;
+    // let result = products.findIndex((product-card) => {
+    //     return product-card.title.indexOf('BCS611') > -1;
     // })
-    // products.forEach(product => console.log(product));
-    // let result = products.filter((product) => {
-    //     return product.price >= 8000 && product.price <= 10000;
+    // products.forEach(product-card => console.log(product-card));
+    // let result = products.filter((product-card) => {
+    //     return product-card.price >= 8000 && product-card.price <= 10000;
     // })
     // let result = products.sort((a, b) => {
     //     return a.price - b.price;
     // })
-    // let result = products.map((product) => {
+    // let result = products.map((product-card) => {
     //     return {
-    //         title: product.title,
-    //         equipment: product.equipment,
+    //         title: product-card.title,
+    //         equipment: product-card.equipment,
     //     };
     // // })
-    // let result = products.reduce((sum, product) => {
-    //     return sum + product.price;
+    // let result = products.reduce((sum, product-card) => {
+    //     return sum + product-card.price;
     // }, 0)
     //--------------------------------------task#1
     // let samsung = brands.find(brand => brand.title.toLowerCase() === 'samsung');
     // // console.log(samsung);
     // if (samsung) {
-    //     let result = products.filter(product => product.brandId === samsung.id)
+    //     let result = products.filter(product-card => product-card.brandId === samsung.id)
     //     console.log(result);
     // }
     //--------------------------------------task#2
-    // let result = products.map(product => {
-    //     let brand = brands.find(brand => brand.id === product.brandId);
+    // let result = products.map(product-card => {
+    //     let brand = brands.find(brand => brand.id === product-card.brandId);
     //     if (brand && brand.title) {
-    //         product.brand = brand.title;
+    //         product-card.brand = brand.title;
     //     }
-    //     delete product.brandId;
-    //     let type = types.find(type => type.id === product.typeId);
+    //     delete product-card.brandId;
+    //     let type = types.find(type => type.id === product-card.typeId);
     //     if (type && type.name) {
-    //         product.type = type.name;
+    //         product-card.type = type.name;
     //     }
-    //     delete product.typeId;
-    //     return product;
+    //     delete product-card.typeId;
+    //     return product-card;
     // });
     // console.log(result);
     //--------------------------------------task#3-------заменить на метод reduce---------!!!!!!!!
-    // let result = products.map(product => {
+    // let result = products.map(product-card => {
     //     let sum = 0;
-    //     product.reviews.forEach(review => {
+    //     product-card.reviews.forEach(review => {
     //         sum += review.stars;
     //     })
     //     return {
-    //         title: product.title,
-    //         rating: +(sum / product.reviews.length).toFixed(1),
+    //         title: product-card.title,
+    //         rating: +(sum / product-card.reviews.length).toFixed(1),
     //     }
     // });
     // console.log(result);
     //--------------------------------------task#4
     // let maxPower = 0;
     // let maxPowerItem = null;
-    // products.forEach(product => {
-    //     let allChar = product.characteristics.find(category => {
+    // products.forEach(product-card => {
+    //     let allChar = product-card.characteristics.find(category => {
     //         return category.name.toLowerCase() === 'основные'
     //     });
     //     if (allChar && allChar.value) {
@@ -188,7 +188,7 @@ function processData() {
     //             let powerNum = parseInt(power.value);
     //             if (!isNaN(powerNum) && powerNum > maxPower) {
     //                 maxPower = powerNum;
-    //                 maxPowerItem = product;
+    //                 maxPowerItem = product-card;
     //             }
     //         }
     //     }
@@ -196,9 +196,9 @@ function processData() {
     // console.log(maxPower);
     // console.log(maxPowerItem);
     //--------------------------------------task#5
-    // let result = products.find(product => {
-    //     // product.find(item => product.reviews.findIndex(review => review.person === 'Константин Хабенский') > -1);
-    //     let index =  product.reviews.findIndex(review => {
+    // let result = products.find(product-card => {
+    //     // product-card.find(item => product-card.reviews.findIndex(review => review.person === 'Константин Хабенский') > -1);
+    //     let index =  product-card.reviews.findIndex(review => {
     //         return review.person === 'Константин Хабенский'
     //     });
     //     return index > -1;

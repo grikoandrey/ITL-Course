@@ -9,7 +9,7 @@ $(document).ready(function () {
         midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
     });
 
-    $('.product-image').magnificPopup({
+    $('.product-card-image').magnificPopup({
         type: 'image',
     });
 
@@ -57,8 +57,8 @@ $(document).ready(function () {
 
 //добавление элементов в localStorage, чтобы сохранять массив для работы
 //пример применения хранилища localStorage
-    $('.product-action').click(function () {
-        let productTitle = $(this).siblings('.product-info').find('h6').text().trim();
+    $('.product-card-action').click(function () {
+        let productTitle = $(this).siblings('.product-card-info').find('h6').text().trim();
 
         let cartArray = [];
         let cart = localStorage.getItem('cart');

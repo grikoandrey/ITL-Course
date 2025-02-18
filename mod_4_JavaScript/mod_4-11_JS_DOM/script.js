@@ -30,6 +30,6 @@ document.querySelector('.rights span').innerText = (new Date()).getFullYear();
 let products = document.getElementsByClassName('product');
 for (let i = 0; i < products.length; i++) {
     if (i % 2 === 1) {
-        products[i].querySelector('.product-info h6').innerText += '*';
+        products[i].querySelector('.product-card-info h6').innerText += '*';
     }
 }

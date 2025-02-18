@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ProductType} from "../../types/product.type";
 
 @Component({
-  selector: 'product',
+  selector: 'product-card',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })

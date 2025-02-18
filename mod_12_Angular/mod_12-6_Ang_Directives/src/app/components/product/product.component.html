@@ -4,12 +4,12 @@
 
   <ng-template #productImageBlock>
     <div class="product-image">
-<!--    <div class="product-image" *ngIf="product.image; else defaultImageBlock">-->
+<!--    <div class="product-card-image" *ngIf="product-card.image; else defaultImageBlock">-->
       <img src="assets/images/{{product.image}}">
     </div>
   </ng-template>
 
-  <!--  <div class="product-image" *ngIf="!product.image">-->
+  <!--  <div class="product-card-image" *ngIf="!product-card.image">-->
   <ng-template #defaultImageBlock>
     <div class="product-image">
       <img src="assets/images/pizzzzza.png">

@@ -3,7 +3,7 @@ $('h1').html('Самая крутая пицца ждет <span>только в 
 // document.getElementById('products-title').style.color = '#000000';
 $('#products-title').css('color', '#000000');
 
-let productInput = $('#product-input');
+let productInput = $('#product-card-input');
 productInput.attr('placeholder', 'Выберите пиццу');
 
 $('.rights span').text((new Date()).getFullYear());
@@ -14,7 +14,7 @@ $('#choose-pizza').click(function () {
 });
 //заполнение поля формы определенным названием и перемещение к блоку
 $('.btn-add-to-card').click((e) => {
-    productInput.val($(e.target).parents('.product').find('h6').text());
+    productInput.val($(e.target).parents('.product-card').find('h6').text());
     $('.order')[0].scrollIntoView({behavior: "smooth"});
 })
 

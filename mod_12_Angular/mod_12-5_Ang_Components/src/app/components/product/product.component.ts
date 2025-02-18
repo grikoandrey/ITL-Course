@@ -15,14 +15,14 @@ import {ProductType} from "../../types/product.type";
 import {TitleComponent} from "../title/title.component";
 
 @Component({
-  selector: 'product',
+  selector: 'product-card',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
   // encapsulation: ViewEncapsulation.None
 })
 export class ProductComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked, OnDestroy {
-  // @Input() product: ProductType = {} as ProductType;
+  // @Input() product-card: ProductType = {} as ProductType;
   @Input()
   get product(): ProductType {
     return this._product;

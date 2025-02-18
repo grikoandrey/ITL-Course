@@ -10,7 +10,7 @@ import {ProductType} from "../../types/product.type";
 import {TitleComponent} from "../title/title.component";
 
 @Component({
-  selector: 'product',
+  selector: 'product-card',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
 })

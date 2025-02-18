@@ -2,7 +2,7 @@ document.getElementById('choose-pizza').onclick = () => {
     document.getElementsByClassName('products')[0].scrollIntoView({behavior: "smooth" });
 }
 
-let productInput = document.getElementById('product-input');
+let productInput = document.getElementById('product-card-input');
 let addToCardButtons = document.getElementsByClassName('btn-add-to-card');
 
 // в рамках модуля 9-5

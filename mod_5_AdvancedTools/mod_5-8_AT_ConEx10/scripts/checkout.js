@@ -5,7 +5,7 @@ let form = $('.order__form');
 let order = $('.order__plus');
 
 $('#submit_order').click(function () {
-    let product = $('#product');
+    let product = $('#product-card');
     let name = $('#name');
     let phone = $('#phone');
     let hasError = false;

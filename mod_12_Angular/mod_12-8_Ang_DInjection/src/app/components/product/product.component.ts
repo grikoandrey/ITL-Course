@@ -12,7 +12,7 @@ import {CartProductService} from "../../services/cart-product.service";
 import {ProductService} from "../../services/product.service";
 
 @Component({
-  selector: 'product',
+  selector: 'product-card',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss'],
   providers: [CartProductService],

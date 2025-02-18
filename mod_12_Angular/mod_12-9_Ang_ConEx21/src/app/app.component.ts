@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
 
   public createOrder(): void {
     if (!this.formValues.productName) {
-      alert('Enter name product');
+      alert('Enter name product-card');
       return;
     }
 
