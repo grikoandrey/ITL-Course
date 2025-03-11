@@ -1,0 +1,11 @@
+<div class="card m-auto text-start">
+  <img src="{{product.image}}" class="card-img-top" alt="tea">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">{{ product.description | slice:0:110 }}...</p>
+    <h6 class="card-title text-end">{{ product.price }} €</h6>
+    <div class="card-action">
+      <a [routerLink]="['/catalog', product.id]" class="btn btn-primary px-5 hvr-pulse-grow">Подробнее</a>
+    </div>
+  </div>
+</div>

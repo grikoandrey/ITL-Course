@@ -1,0 +1,19 @@
+<section class="products mb-5">
+  <div class="container">
+    <h2 class="h2 text-center mb-5 wow animate__backInLeft">
+<!--      Наши чайные коллекции-->
+      {{ searchQuery ? 'Результаты поиска по запросу "' + searchQuery + '"' : 'Наши чайные коллекции' }}
+    </h2>
+    <div class="row gy-4">
+      <product class="col-12 col-md-6 col-xl-4 text-center" *ngFor="let product of products"
+               [product]="product"></product>
+    </div>
+    <div *ngIf="products.length === 0 && !loading">
+      <p class="text-center">Ничего не найдено</p>
+    </div>
+    <div *ngIf="loading" class="loading-page">
+      <div class="loader">
+      </div>
+    </div>
+  </div>
+</section>
