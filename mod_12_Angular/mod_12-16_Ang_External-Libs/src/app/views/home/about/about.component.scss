@@ -1,0 +1,14 @@
+.about .container{
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image {
+  gap: 60px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.about-text {
+  max-width: none;
+}
