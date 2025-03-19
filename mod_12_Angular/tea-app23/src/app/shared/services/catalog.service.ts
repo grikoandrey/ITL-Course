@@ -2,13 +2,14 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Observable} from "rxjs";
 import {ProductType} from "../../../types/product.types";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CatalogService {
 
-  private apiUrl = 'https://testologia.ru/tea';
+  private apiUrl = environment.apiURL + 'tea';
 
   constructor(private http: HttpClient) { }
 

@@ -36,6 +36,7 @@
     "@types/jquery": "^3.5.32",
     "@types/jqueryui": "^1.12.24",
     "@types/node": "^16.18.126",
+    "http-server": "^14.1.1",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
