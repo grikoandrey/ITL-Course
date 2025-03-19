@@ -1,0 +1,61 @@
+.carousel-item__info {
+  top: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .fs-1 {
+    font-size: 1.5rem !important;
+  }
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+  .carousel-item__info {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .fs-1 {
+    font-size: 1.2rem !important;
+  }
+  .fs-5 {
+    font-size: 0.8rem !important;
+  }
+}
+
+.modal-header, .modal-footer {
+  border: 0;
+}
+
+//.ui-icon {
+//  background-position: 0;
+//  width: 20px;
+//  height: 20px;
+//  position: absolute;
+//  right: 28px;
+//  top: 25px;
+//  background-image: url("../../../../assets/images/arrow.svg");
+//}
+//
+//.ui-state-active .ui-icon {
+//  transform: rotate(180deg);
+//  background-image: url("../../../../assets/images/arrow.svg");
+//  transition: transform 0.5s ease;
+//}
+//
+//@media screen and (max-width: 576px) {
+//  .ui-icon {
+//    top: 20px;
+//  }
+//}
+//
+//@media screen and (max-width: 410px) {
+//  #accordion {
+//    font-size: 0.8rem;
+//  }
+//  .ui-icon {
+//    top: 16px;
+//    right: 10px;
+//    background-size: 70%;
+//  }
+//}
